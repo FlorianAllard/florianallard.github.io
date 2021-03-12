@@ -2822,7 +2822,7 @@ input[type="button"],
 }
 
 .slides {
-    width: 800%;
+    width: 1100%;
     height: 100%;
     display: flex;
     top: 0;
@@ -2834,9 +2834,9 @@ input[type="button"],
 .slides input {
     display: none;
 }
-
+ 
 .slide {
-    width: calc(100% / 8);
+    width: calc(100% / 11);
     transition: 1s;
 }
 
@@ -2880,28 +2880,34 @@ input[type="button"],
         }
 
 #radio1:checked ~ .first {
-    margin-left: calc(-12.5% * 0);
+    margin-left: calc(-9.09% * 0);
 }
 #radio2:checked ~ .first {
-    margin-left: calc(-12.5% * 1);
+    margin-left: calc(-9.09% * 1);
 }
 #radio3:checked ~ .first {
-    margin-left: calc(-12.5% * 2);
+    margin-left: calc(-9.09% * 2);
 }
 #radio4:checked ~ .first {
-    margin-left: calc(-12.5% * 3);
+    margin-left: calc(-9.09% * 3);
 }
 #radio5:checked ~ .first {
-    margin-left: calc(-12.5% * 4);
+    margin-left: calc(-9.09% * 4);
 }
 #radio6:checked ~ .first {
-    margin-left: calc(-12.5% * 5);
+    margin-left: calc(-9.09% * 5);
 }
 #radio7:checked ~ .first {
-    margin-left: calc(-12.5% * 6);
+    margin-left: calc(-9.09% * 6);
 }
 #radio8:checked ~ .first {
-    margin-left: calc(-12.5% * 7);
+    margin-left: calc(-9.09% * 7);
+}
+#radio9:checked ~ .first {
+    margin-left: calc(-9.09% * 8);
+}
+#radio10:checked ~ .first {
+    margin-left: calc(-9.09% * 9);
 }
 
 /* Header */
