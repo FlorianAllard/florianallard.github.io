@@ -26,7 +26,7 @@
 						<li><a href="#two" class="active">En ce moment</a></li>
 						<li><a href="#three">Compétences</a></li>
 						<li><a href="#four">Projets & Missions</a></li>
-						<li><a href="#five">Contact</a></li>
+						<li><a href="#five">Bande démo</a></li>
 					</ul>
 				</nav>
 				<footer>
@@ -58,8 +58,11 @@
                                         <p>Actuellement en formation sur le développement de jeux vidéo. J'ai eu l'occasion au cours de plusieurs projets étudiants et personnels sur Unity d'en apprendre beaucoup sur la conception, le développement de jeux vidéo et le moteur en lui-même, dans lequel je me suis spécialisé.</p>
                                     </div>
                                 </article>
+                                <div class="info">
+                                    <h4>Contactez moi ! <br> allardflorian.pro@gmail.com</h4>
+                                    <h4><a href="https://docs.google.com/uc?export=download&id=1Ylh8XMe2OdoNaCWFHj_TnaJs4bUpXsWf" class="resume"><u>Téléchargez mon CV</u></a></h4>
+                                </div>
                             </div>
-                        </div>
                     </section>
 
                     <!-- Two -->
@@ -75,18 +78,28 @@
                                         <p>Développé dans le cadre de mon Master. <br> Je m'occupe de l'ensemble du projet en totale autonomie: aussi bien la conception et le développement et la production graphique.</p>
                                     </div>
                                 </article>
+                                <div class="slideshow-container">
+                                    <div class="dummy"></div>
+                                    <div class="slideshow">
+                                        <div class="slides">
+                                            <input type="radio" name="radio-button" id="radio1" , checked>
+                                            <input type="radio" name="radio-button" id="radio2">
+                                            <input type="radio" name="radio-button" id="radio3">
+                                            <input type="radio" name="radio-button" id="radio4">
+                                            <input type="radio" name="radio-button" id="radio5">
+                                            <input type="radio" name="radio-button" id="radio6">
+                                            <input type="radio" name="radio-button" id="radio7">
+                                            <input type="radio" name="radio-button" id="radio8">
 
-                                <div class="slideshow">
-                                    <div class="slides">
-                                        <input type="radio" name="radio-button" id="radio1", checked>
-                                        <input type="radio" name="radio-button" id="radio2">
-                                        <input type="radio" name="radio-button" id="radio3">
-                                        <input type="radio" name="radio-button" id="radio4">
-
-                                        <div class="slide first"> <img src="images/spyware1.jpg"> </div>
-                                        <div class="slide"> <img src="images/spyware2.jpg"> </div>
-                                        <div class="slide"> <img src="images/spyware3.jpg"> </div>
-                                        <div class="slide"> <img src="images/spyware4.jpg"> </div>
+                                            <div class="slide first"> <img src="images/spyware1.jpg"> </div>
+                                            <div class="slide"> <img src="images/spyware2.jpg"> </div>
+                                            <div class="slide"> <img src="images/spyware3.jpg"> </div>
+                                            <div class="slide"> <img src="images/spyware4.jpg"> </div>
+                                            <div class="slide"> <img src="images/spyware5.jpg"> </div>
+                                            <div class="slide"> <img src="images/spyware6.jpg"> </div>
+                                            <div class="slide"> <img src="images/spyware7.jpg"> </div>
+                                            <div class="slide"> <img src="images/spyware8.jpg"> </div>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -95,6 +108,10 @@
                                     <span class="navdot" onclick="setSlide(2)"></span>
                                     <span class="navdot" onclick="setSlide(3)"></span>
                                     <span class="navdot" onclick="setSlide(4)"></span>
+                                    <span class="navdot" onclick="setSlide(5)"></span>
+                                    <span class="navdot" onclick="setSlide(6)"></span>
+                                    <span class="navdot" onclick="setSlide(7)"></span>
+                                    <span class="navdot" onclick="setSlide(8)"></span>
                                 </div>
 
                                 <script type="text/javascript">
@@ -108,7 +125,7 @@
                                     setInterval(function () {
                                         if (interval > 3) {
                                             counter++;
-                                            if (counter > 4) { counter = 1; }
+                                            if (counter > 8) { counter = 1; }
                                             interval = 0;
                                             applySlide();
                                         }
@@ -116,8 +133,7 @@
                                             interval++;
                                         }
                                     }, 1000);
-                                    function applySlide()
-                                    {
+                                    function applySlide() {
                                         var navdots = document.getElementsByClassName("navdot");
 
                                         for (var i = 0; i < navdots.length; i++) {
@@ -211,9 +227,9 @@
                     <!-- Five -->
                     <section id="five">
                         <div class="container">
-                            <h3>Contactez moi !</h3>
-                            <h4>allardflorian.pro@gmail.com</h4>
-                            <a href="https://docs.google.com/uc?export=download&id=1Ylh8XMe2OdoNaCWFHj_TnaJs4bUpXsWf"><h4><u>Téléchargez mon CV</u></h4></a>
+                            <h3>Bande démo</h3>
+                            <p>Voice ma bande démo, avec laquelle vous pourrez voir en action certains des projets et missions présentés auparavant.</p>
+                            <div class="demoreel"><iframe width="1280" height="720" src="https://www.youtube.com/embed/fsK3pjPDUtA?rel=0&amp;autoplay=1&mute=1&loop=1" frameborder="0" allowfullscreen></iframe></div>
                         </div>
                     </section>
 
@@ -222,9 +238,10 @@
 				<!-- Footer -->
 					<section id="footer">
 						<div class="container">
-							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
+                            <ul class="copyright">
+                                <li>&copy; Florian Allard. All rights reserved.</li>
+                                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                            </ul>
 						</div>
 					</section>
 
