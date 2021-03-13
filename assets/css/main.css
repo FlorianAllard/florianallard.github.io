@@ -2386,7 +2386,6 @@ ul.feature-icons {
         ul.feature-icons li:before {
             -moz-osx-font-smoothing: grayscale;
             -webkit-font-smoothing: antialiased;
-            display: inline-flex;
             font-style: normal;
             font-variant: normal;
             text-rendering: auto;
@@ -2400,13 +2399,13 @@ ul.feature-icons {
             background: #0f75bc;
             border-radius: 100%;
             color: #ffffff;
-            display: block;
+            display: inline-block;
             line-height: 2.5em;
             width: 2.5em;
             flex-shrink: 0;
             position: inherit;
             text-align: center;
-            margin: 0 1em 0 0;
+            margin: 0 4% 0 0;
         }
 
 /* Icons */
@@ -2685,15 +2684,21 @@ input[type="button"],
 /* About */
 
 .about article {
-    max-width: 100%;
-    width: 45em;
-    display : flex;
-    justify-content: space-between;
-    align-items: center;
+    border-top: solid 3px #f4f4f4;
+    margin-bottom: 2.25em;
+    padding-top: 2.25em;
 }
 
+    .about article:first-child {
+        border-top: 0;
+        padding-top: 0;
+    }
+
     .about article .image {
-        padding-right: 2.25em;
+        display: inline-block;
+        padding-right: 2.5em;
+        vertical-align: middle;
+        width: 38%;
     }
 
         .about article .image img {
@@ -2702,72 +2707,37 @@ input[type="button"],
         }
 
     .about article .inner {
-        flex: 1 1 auto;
+        display: inline-block;
+        vertical-align: middle;
+        width: 60%;
     }
 
-    .about h2 {
-        margin: 0;
-    }
+        .about article .inner > :first-child {
+            margin: 0;
+        }
 
-    .about p {
-    }
+        .about article .inner > :last-child {
+            margin-bottom: 0;
+        }
 
-    .about .info{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+.about .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
     .about .info h4 {
         margin: 0;
     }
 
-        .about .info .a {
-            transition: .5s;
-            cursor: pointer;
+    .about .info .a {
+        transition: .5s;
+        cursor: pointer;
+    }
+
+        .about .info .a:hover {
+            color: #25aae1;
         }
-
-            .about .info .a:hover {
-                color: #25aae1;
-            }
-
-/* Current */
-
-
-.current article {
-    margin-bottom: 1.5em;
-}
-
-.current article:first-child {
-    border-top: 0;
-    padding-top: 0;
-}
-
-.current article .image {
-    display: inline-block;
-    padding-right: 2.5em;
-    vertical-align: middle;
-    width: 48%;
-}
-
-    .current article .image img {
-        display: block;
-        width: 100%;
-    }
-
-.current article .inner {
-    display: inline-block;
-    vertical-align: middle;
-    width: 51.5%;
-}
-
-    .current article .inner > :first-child {
-        margin: 0;
-    }
-
-    .current article .inner > :last-child {
-        margin-bottom: 0;
-    }
 
     /* Demoreel */
 .demoreel {
@@ -3267,7 +3237,7 @@ input[type="button"],
             font-weight: 700;
             height: 44px;
             line-height: 44px;
-            padding: 0 0 0 calc(64px + 1em);
+            padding: 0 0 0 64px;
             width: 100%;
             text-align: left;
         }
@@ -3311,7 +3281,7 @@ input[type="button"],
                 line-height: 44px;
                 text-align: center;
                 top: 0;
-                width: 64px;
+                width: 44px;
                 right: 0;
             }
 
@@ -3405,6 +3375,29 @@ input[type="button"],
         width: 100%;
     }
 
+    /* About */
+
+    .about article .video {
+        display: block;
+        margin: 0 0 2.25em 0;
+        padding-right: 0;
+        width: 1280px;
+    }
+
+    .about article .image {
+        display: block;
+        margin: 0 0 2.25em 0;
+        padding-right: 0;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about article .inner {
+        display: block;
+        width: 100%;
+    }
+
     /* Header */
 
     #header {
@@ -3469,7 +3462,7 @@ input[type="button"],
     }
 
         #titleBar .toggle:before {
-            font-size: 14px;
+            font-size: 18px;
             width: 44px;
         }
 
@@ -3530,7 +3523,6 @@ input[type="button"],
             }
 
     ul.feature-icons li {
-        display: block;
         width: 100%;
     }
 
