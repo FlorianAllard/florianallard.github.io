@@ -2378,7 +2378,7 @@ ul.feature-icons {
         align-items: center;
         justify-content: flex-start;
         position: relative;
-        vertical-align: top;
+        vertical-align: middle;
         width: 48%;
         padding: 1.5em 1em 0 0;
     }
@@ -2401,8 +2401,9 @@ ul.feature-icons {
             border-radius: 100%;
             color: #ffffff;
             display: block;
-            flex: 0 0 2.5em;
             line-height: 2.5em;
+            width: 2.5em;
+            flex-shrink: 0;
             position: inherit;
             text-align: center;
             margin: 0 1em 0 0;
