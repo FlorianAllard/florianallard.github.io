@@ -1,0 +1,251 @@
+@font-face {
+    font-family: league-spartan;
+    src: url(LeagueSpartan.ttf);
+}
+
+*,
+::before,
+::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: var(--text);
+    font-family: league-spartan;
+    font-size: 16px;
+}
+
+:root {
+    --background-dark: #3700B3;
+    --background: #6200EE;
+    --background-light: #9B80D9;
+    --text: #FFFFFF;
+    --primary: #04DAC6;
+    --side-margins: 12.5vw;
+    --nav-start: calc(var(--side-margins) + 26.25vw);
+}
+
+@media screen and (width < 1300px) {
+    :root {
+        --side-margins: 6.25vw;
+    }
+}
+
+body {
+    position: relative;
+    background-color: var(--background-dark);
+    padding: 0 0 64px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+#header-container {
+    position: sticky;
+    top: 0;
+    padding-top: 64px;
+    background-color: var(--background-dark);
+    z-index: 1;
+}
+
+header {
+    height: 64px;
+    padding: 0 var(--side-margins);
+    border-top: 1px solid var(--background);
+    border-bottom: 1px solid var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    z-index: 1;
+}
+
+header div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+#logo-container {
+    display: flex;
+    background-color: var(--text);
+    padding: 0 34px 0 32px;
+    height: calc(100% + 2px);
+}
+
+#logo-container img {
+    margin: auto 0 auto 0;
+}
+
+h3,
+#header-nav button {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#header-nav {
+    position: absolute;
+    display: flex;
+    gap: 32px;
+    left: var(--nav-start);
+}
+
+#header-nav button {
+    background-color: transparent;
+    color: var(--background-light);
+    border: none;
+}
+
+#header-nav button:nth-child(1) {
+    color: var(--text);
+}
+
+#header-nav button:hover {
+    color: var(--primary);
+}
+
+header select {
+    background-color: transparent;
+    padding-right: calc(0.65rem + 8px);
+    color: var(--text);
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    appearance: none;
+    background-image: url("./img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right 0 bottom 60%;
+    background-size: 0.65rem auto;
+}
+
+#header-right button {
+    background-color: var(--text);
+    color: var(--background-dark);
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: calc(100% + 2px);
+    padding: 0 32px 0 32px;
+}
+
+#header-right button:hover {
+    background-color: var(--primary);
+}
+
+.vertical {
+    position: absolute;
+    background-color: var(--background);
+    height: 100%;
+    width: 1px;
+    top: 0;
+    z-index: -2;
+}
+
+.vertical:nth-child(1) {
+    left: var(--side-margins);
+}
+
+.vertical:nth-child(2) {
+    left: calc(var(--side-margins) + 32px);
+}
+
+.vertical:nth-child(3) {
+    left: var(--nav-start);
+}
+
+.vertical:nth-child(4) {
+    left: 50%;
+}
+
+.vertical:nth-child(5) {
+    right: calc(var(--side-margins) + 32px);
+}
+
+.vertical:nth-child(6) {
+    right: var(--side-margins);
+}
+
+section {
+    position: relative;
+    padding: 0 var(--side-margins);
+    border-top: 1px solid var(--background);
+    border-bottom: 1px solid var(--background);
+    height: calc(100vh - 256px);
+}
+
+#section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+#about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#about-left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-self: stretch;
+}
+
+h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 96px;
+    line-height: 80px;
+}
+
+h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: 40px;
+}
+
+#about-left p {
+    font-size: 24px;
+    width: calc(var(--nav-start) - var(--side-margins));
+    margin-top: 16px;
+}
+
+#about-nav {
+    display: flex;
+    flex-direction: column;
+    width: calc(var(--nav-start) - var(--side-margins));
+    justify-content: flex-end;
+    flex-grow: 1;
+    margin-bottom: -16px;
+}
+
+#about-left button {
+    background-color: transparent;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 48px;
+    text-align: left;
+    padding-top: 8px;
+}
+
+#about-left button:hover {
+    background-color: var(--primary);
+    color: var(--background-dark);
+    padding-left: 32px;
+}
+
+#about-image {
+    position: absolute;
+    width: calc(50% - var(--side-margins));
+    z-index: -1;
+    opacity: 50%;
+    border: 1px solid var(--background-light);
+    right: var(--side-margins);
+    height: calc(100% + 2px);
+    background-image: url("./img/placeholder.png");
+    background-repeat: repeat;
+    background-size: 128px;
+}
