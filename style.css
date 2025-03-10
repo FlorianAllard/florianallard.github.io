@@ -1,3 +1,5 @@
+/* TODO: imports */
+
 @font-face {
     font-family: league-spartan;
     src: url(LeagueSpartan.ttf);
@@ -9,13 +11,13 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    color: var(--text-on-background);
-    font-family: league-spartan;
-    font-size: 16px;
 }
 
 html {
     scroll-behavior: smooth;
+    font-family: league-spartan;
+    font-size: 16px;
+    color: var(--text-on-background);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,7 +29,8 @@ html {
         --primary-variant: #CDBFEC;
         --text-on-background: var(--primary);
         --text-on-primary: var(--background);
-        --img-tint: invert(100%) sepia(0%) saturate(0%) hue-rotate(58deg) brightness(103%) contrast(102%);
+        --tint-to-primary: invert(100%) sepia(0%) saturate(0%) hue-rotate(58deg) brightness(103%) contrast(102%);
+        --tint-to-background: invert(100%) sepia(0%) saturate(0%) hue-rotate(58deg) brightness(103%) contrast(102%);
     }
 
     #logo-container img:nth-child(1) {
@@ -44,7 +47,8 @@ html {
         --primary-variant: #737170;
         --text-on-background: var(--primary);
         --text-on-primary: var(--background);
-        --img-tint: none;
+        --tint-to-primary: none;
+        --tint-to-background: invert(100%) sepia(0%) saturate(0%) hue-rotate(58deg) brightness(103%) contrast(102%);
     }
 
     #logo-container img:nth-child(2) {
@@ -165,17 +169,17 @@ h5,
     width: 32px;
     display: flex;
     padding: 6px;
-    border: 1px solid var(--primary-variant);
+    border: 2px solid var(--primary-variant);
     border-radius: 50%;
 }
 
-.secondary-button img {
-    filter: var(--img-tint)
+.secondary-button i {
+    color: var(--tint-to-primary);
 }
 
 .secondary-button:hover {
     background-color: var(--background-variant);
-    border: 1px solid var(--primary);
+    border: 2px solid var(--primary);
 }
 
 .vertical {
@@ -308,6 +312,13 @@ h2 {
     gap: 32px;
 }
 
+.main-skill-card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    grid-row: 1/ span 2;
+}
+
 .skill-card {
     background-color: var(--surface);
     padding: 32px;
@@ -315,14 +326,7 @@ h2 {
     flex-direction: column;
     gap: 16px;
     border-radius: 16px;
-}
-
-.skill-card:nth-child(1) {
-    grid-row: 1/ span 2;
-}
-
-.skill-card:nth-child(2) {
-    grid-row: 1/ span 2;
+    flex-grow: 1;
 }
 
 .skill-card h3 {
@@ -343,27 +347,45 @@ h2 {
     flex-grow: 1;
 }
 
-.language {
+.language-container {
     display: flex;
-    gap: 8px;
-    align-items: center;
-    font-weight: 700;
-    font-size: 20px;
+    gap: 24px;
 }
 
-.language div {
-    background-color: var(--background-color);
+.language-container div {
     border-radius: 50%;
-    height: 32px;
-    width: 32px;
-    padding: 4px;
+    aspect-ratio: 1/1;
+    flex-grow: 1;
+}
+
+.language {
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    font-size: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.language img {
-    width: 16px;
+.language.html {
+    background-color: #DD4B25;
+}
+
+.language.css {
+    background-color: #3595CF;
+}
+
+.language.javascript {
+    background-color: #FA9F2F;
+}
+
+.language.csharp {
+    background-color: #9F549A;
+}
+
+.language.php {
+    background-color: #6586BD;
 }
 
 #projects {
@@ -383,7 +405,7 @@ h2 {
 .project-card {
     height: 128px;
     position: relative;
-    background-color: var(--detail-color);
+    background-color: var(--surface);
     display: flex;
 }
 

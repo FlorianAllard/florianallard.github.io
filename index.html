@@ -10,6 +10,7 @@
     <meta name="author" content="Florian Allard">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
 </head>
 
 <body>
@@ -34,8 +35,12 @@
                 <a href="#about">À propos</a>
             </div>
             <div id="header-right">
-                <button class="secondary-button"><img src="./img/linkedin.svg" alt="linkedin"></button>
-                <button class="secondary-button"><img src="./img/github.svg" alt="linkedin"></button>
+                <button class="secondary-button">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </button>
+                <button class="secondary-button">
+                    <i class="fa-brands fa-github"></i>
+                </button>
                 <button class="primary-button">Me contacter</button>
             </div>
         </header>
@@ -63,43 +68,48 @@
         <section id="skills" style="scroll-margin-top: 192px;">
             <h2>Compétences</h2>
             <div id="skill-card-container">
-                <div class="skill-card">
-                    <h4>01</h4>
-                    <h3>Front-end</h3>
-                    <p>Je maîtrise le développement front-end web, de la conception d’interfaces modernes à
-                        l’intégration responsive. J’accorde une attention particulière à l’ergonomie, à la performance
-                        et à l’expérience utilisateur pour créer des sites intuitifs et efficaces.</p>
-                    <div class="language">
-                        <div><img src="./img/html.svg" alt="html"></div>
-                        HTML
+                <div class="main-skill-card">
+                    <div class="skill-card">
+                        <h4>01</h4>
+                        <h3>Front-end</h3>
+                        <p>Je maîtrise le développement front-end web, de la conception d’interfaces modernes à
+                            l’intégration responsive. J’accorde une attention particulière à l’ergonomie, à la
+                            performance
+                            et à l’expérience utilisateur pour créer des sites intuitifs et efficaces.</p>
                     </div>
-                    <div class="language">
-                        <div><img src="./img/css.svg" alt="css"></div>
-                        CSS
-                    </div>
-                    <div class="language">
-                        <div><img src="./img/javascript.svg" alt="javascript"></div>
-                        JavaScript / TypeScript
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <h4>02</h4>
-                    <h3>Back-end</h3>
-                    <p>Je maîtrise le développement back-end, de la conception d'API à la gestion des bases de données.
-                        J'assure la performance, la sécurité et la scalabilité des systèmes.</p>
-                    <div class="language">
-                        <div><img src="./img/php.svg" alt="php"></div>
-                        PHP
-                    </div>
-                    <div class="language">
-                        <div><img src="./img/csharp.svg" alt="c#"></div>
-                        .NET
-                    </div>
-                    <div class="language">
-                        <div><img src="./img/javascript.svg" alt="javascript"></div>
-                        JavaScript / Typescript
+                    <div class="language-container">
+                        <div class="language html">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <div class="language css">
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+                        <div class="language javascript">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
                     </div>
                 </div>
+                <div class="main-skill-card">
+                    <div class="skill-card">
+                        <h4>02</h4>
+                        <h3>Back-end</h3>
+                        <p>Je maîtrise le développement back-end, de la conception d'API à la gestion des bases de
+                            données.
+                            J'assure la performance, la sécurité et la scalabilité des systèmes.</p>
+                    </div>
+                    <div class="language-container">
+                        <div class="language php">
+                            <i class="fa-brands fa-php"></i>
+                        </div>
+                        <div class="language csharp">
+                            C#
+                        </div>
+                        <div class="language javascript">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="skill-card">
                     <h4>03</h4>
                     <h3>UX/UI Design</h3>
@@ -121,16 +131,16 @@
         <section id="projects" style="scroll-margin-top: 192px;">
             <h2>Projets</h2>
             <div id="project-card-container">
-                <div class="project-card">
+                <div class="project-card" id="oversoc">
                     <img src="./img/oversoc.png" alt="oversoc">
                 </div>
-                <div class="project-card"></div>
-                <div class="project-card"></div>
-                <div class="project-card"></div>
-                <div class="project-card"></div>
-                <div class="project-card"></div>
-                <div class="project-card"></div>
-                <div class="project-card"></div>
+                <div class="project-card" id="maxim-the-robot"></div>
+                <div class="project-card" id="not-a-spyware"></div>
+                <div class="project-card" id="gbc-horror"></div>
+                <div class="project-card" id="cube-kingdoms"></div>
+                <div class="project-card" id="horror-factory"></div>
+                <div class="project-card" id="candlelight"></div>
+                <div class="project-card" id="meadgard"></div>
             </div>
         </section>
         <section id="about" style="scroll-margin-top: 128px;">
