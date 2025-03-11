@@ -1,0 +1,138 @@
+@import url(./theme.css);
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.accordion hr {
+    border: 1px solid var(--background-variant);
+}
+
+.accordion input[type="radio"] {
+    display: none;
+}
+
+.accordion-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion-header {
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 0;
+}
+
+.accordion-content {
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: all 500ms ease;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.accordion-content p {
+    padding-bottom: .5rem;
+}
+
+.accordion input[type="radio"]:checked + .accordion-header + .accordion-content {
+    height: 64px;
+}
+
+.accordion-header i {
+    transition: all 200ms ease;
+}
+
+.accordion input[type="radio"]:checked + .accordion-header i {
+    transform: rotate(90deg);
+}
+
+.accordion .badge {
+    background-color: var(--surface);
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    font-size: 24px;
+    img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+    }
+    span {
+        margin-top: 4px;
+    }
+    box-shadow: var(--shadow);
+}
+
+.badge[title="HTML"] {
+    color: #E64D24;
+}
+
+.badge[title="CSS"] {
+    color: #2261B4;
+}
+
+.badge[title="JavaScript"] {
+    color: #E4AF5C;
+}
+
+.badge[title="TypeScript"] img {
+    filter: invert(31%) sepia(72%) saturate(3595%) hue-rotate(187deg) brightness(93%) contrast(99%);
+}
+
+.badge[title="Sass"] {
+    color: #BF608C;
+}
+
+.badge[title="Bootstrap"] {
+    color: #7752B0;
+}
+
+.badge[title="Tailwind"] img {
+    filter: invert(61%) sepia(7%) saturate(3464%) hue-rotate(131deg) brightness(97%) contrast(84%);
+}
+
+.badge[title="PHP"] {
+    color: #8A93BE;
+}
+
+.badge[title="UI"] {
+    color: #8DB392;
+}
+
+.badge[title="UX"] {
+    color: #567D7E;
+}
+
+.badge[title="Git"] {
+    color: #F15639;
+}
+
+.badge[title="Docker"] {
+    color: #1E97D5;
+}
+
+.badge[title="Postman"] img {
+    filter: invert(56%) sepia(81%) saturate(2432%) hue-rotate(334deg) brightness(102%) contrast(102%);
+}
+
+.badge[title="C#"] {
+    color: #6E0885;
+}
+
+.badge[title="Unity"] {
+    color: #29333D;
+}

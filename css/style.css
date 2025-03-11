@@ -1,16 +1,10 @@
+@import url(./theme.css);
+@import url(./accordion.css);
+@import url(./experience.css);
+
 @font-face {
     font-family: league-spartan;
-    src: url(../LeagueSpartan.ttf);
-}
-
-:root {
-    --background: #E3DFDC;
-    --background-variant: #D8D3CF;
-    --surface: #FFFFFF;
-    --primary: #030303;
-    --primary-variant: #6200EE;
-    --text-on-background: #030303;
-    --text-on-primary: var(--background);
+    src: url(/LeagueSpartan.ttf);
 }
 
 *,
@@ -27,9 +21,10 @@ html {
     color: var(--text-on-background);
 }
 
+
 body{
-    height: 100vh;
     width: 100vw;
+    max-width: 100%;
     display: flex;
     gap: 96px;
     padding: 64px;
@@ -37,6 +32,9 @@ body{
 }
 
 #left-section {
+    position: sticky;
+    top: 64px;
+    height: calc(100vh - 128px);
     width: 33vw;
     min-width: 33vw;
     display: flex;
@@ -49,6 +47,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 64px;
+    padding-top: 8px;
 }
 
 #right-section section {
@@ -72,8 +71,14 @@ header {
     border-radius: 16px;
     padding: 20px 20px 20px 18px;
     aspect-ratio: 1/1;
-    width: fit-content;
-    display: flex;
+    width: 80px;
+    height: 80px;
+}
+
+#logo-container img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
 }
 
 h1 {
@@ -97,6 +102,11 @@ h3 {
 h4 {
     font-weight: 700;
     margin: 4px 0;
+}
+
+h5 {
+    font-weight: 700;
+    opacity: 50%;
 }
 
 p {

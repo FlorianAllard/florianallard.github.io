@@ -1,156 +1,234 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
-    <title>Portfolio</title>
     <meta charset="UTF-8">
-    <meta name="keywords"
-        content="Développeur, fullstack, HTML, CSS, JavaScript, TypeScript, PHP, Lille, Florian, Allard">
-    <meta name="description" content="Site portfolio de Florian Allard, développeur fullstack en métropole lilloise.">
-    <meta name="author" content="Florian Allard">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <title>Florian Allard</title>
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div id="header-container">
-        <div class="vertical"></div>
-        <div class="vertical"></div>
-        <div class="vertical"></div>
-        <div class="vertical"></div>
-        <div class="vertical"></div>
-        <div class="vertical"></div>
+    <section id="left-section">
         <header>
-            <div id="header-left">
+            <div id="hero">
                 <div id="logo-container">
-                    <img src="./img/logo-light.svg" alt="logo">
-                    <img src="./img/logo-dark.svg" alt="logo">
+                    <img src="./icons/logo-light.png" alt="logo" id="logo-light">
+                    <img src="./icons/logo-dark.png" alt="logo" id="logo-dark">
                 </div>
-                <h5>Florian Allard</h5>
+                <div>
+                    <h1>Florian Allard</h1>
+                    <h2>Développeur fullstack</h2>
+                </div>
             </div>
-            <div id="header-nav">
-                <a href="#skills">Compétences</a>
-                <a href="#projects">Projets</a>
-                <a href="#about">À propos</a>
-            </div>
-            <div id="header-right">
-                <button class="secondary-button">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </button>
-                <button class="secondary-button">
-                    <i class="fa-brands fa-github"></i>
-                </button>
-                <button class="primary-button">Me contacter</button>
-            </div>
+            <p>Développeur et designer depuis près de 7 ans sur des projets divers tels que des jeux vidéo, des sites web ou des applications, je suis à la recherche d'une nouvelle mission qui me permettra d'approfondir mes compétences et de relever de nouveaux défis.</p>
+            <ul id="navigation">
+                <li><a href="about">À propos</a></li>
+                <li><a href="skills">Compétences</a></li>
+                <li><a href="experience">Expérience</a></li>
+                <li><a href="education">Formation</a></li>
+                <li><a href="projects">Projets</a></li>
+            </ul>
         </header>
-    </div>
-    <div id="section-container">
-        <div class="vertical"></div>
-        <div class="vertical"></div>
-        <div class="vertical"></div>
-        <div class="vertical"></div>
-        <div class="vertical"></div>
-        <section id="hero" style="scroll-margin-top: 192px;">
-            <div id="hero-left">
-                <h1>Florian Allard</h1>
-                <h2>Développeur fullstack</h2>
-                <p>Passionné par la programmation depuis 8 ans, je recherche de nouvelles missions pour approfondir mes
-                    compétences, relever de nouveaux défis et contribuer à des projets innovants.</p>
-                <div id="hero-nav">
-                    <a href="#skills">Compétences</a>
-                    <a href="#projects">Projets</a>
-                    <a href="#about">À propos</a>
+        <footer>
+            <a href="contact">Me contacter</a>
+            <a href="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="github"><i class="fa-brands fa-square-github"></i></a>
+        </footer>
+    </section>
+    <section id="right-section">
+        <section id="about">
+            <h3>À propos</h3>
+            <p id="about"> Je suis un développeur fullstack passionné par la création d'expériences numériques
+                intuitives et performantes. Fort d'une affinité pour l'UI/UX design, je m'efforce de concilier esthétique
+                et fonctionnalité pouroffrir des interfaces web qui non seulement séduisent, mais optimisent
+                l'expérience utilisateur. Mon travail se situe à l'intersection de la conception et du développement, où
+                chaque projet est l'opportunité de bâtir des solutions robustes, accessibles et scalables. Si vous
+                cherchez un développeur capable de transformer vos idées enproduits web concrets et soignés, vous êtes
+                au bon endroit.</p>
+        </section>
+        <section id="skills">
+            <h3>Compétences</h3>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <input type="radio" id="skill-accordion-1" name="accordion-radio">
+                    <label for="skill-accordion-1" class="accordion-header">
+                        Front-end
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </label>
+                    <div class="accordion-content">
+                            <div class="badge" title="HTML"><i class="fa-brands fa-html5"></i></div>
+                            <div class="badge" title="CSS"><i class="fa-brands fa-css3-alt"></i></div>
+                            <div class="badge" title="JavaScript"><i class="fa-brands fa-js"></i></div>
+                            <div class="badge" title="TypeScript"><img src="./icons/typescript.svg" alt="typescript"></div>
+                            <div class="badge" title="Sass"><i class="fa-brands fa-sass"></i></div>
+                            <div class="badge" title="Bootstrap"><i class="fa-brands fa-bootstrap"></i></div>
+                            <div class="badge" title="Tailwind"><img src="./icons/tailwind.svg" alt="tailwind"></div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="accordion-item">
+                    <input type="radio" id="skill-accordion-2" name="accordion-radio">
+                    <label for="skill-accordion-2" class="accordion-header">
+                        Back-end
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </label>
+                    <div class="accordion-content">
+                        <div class="badge" title="PHP"><i class="fa-brands fa-php"></i></div>
+                        <div class="badge" title="Symfony"><i class="fa-brands fa-symfony"></i></i></div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="accordion-item">
+                    <input type="radio" id="skill-accordion-3" name="accordion-radio">
+                    <label for="skill-accordion-3" class="accordion-header">
+                        Conception
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </label>
+                    <div class="accordion-content">
+                        <div class="badge" title="Figma"><img src="./icons/figma.png" alt="figma"></div>
+                        <div class="badge" title="UI"><span>UI</span></div>
+                        <div class="badge" title="UX"><span>UX</span></div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="accordion-item">
+                    <input type="radio" id="skill-accordion-4" name="accordion-radio">
+                    <label for="skill-accordion-4" class="accordion-header">
+                        Outils
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </label>
+                    <div class="accordion-content">
+                        <div class="badge" title="Git"><i class="fa-brands fa-git-alt"></i></div>
+                        <div class="badge" title="Docker"><i class="fa-brands fa-docker"></i></div>
+                        <div class="badge" title="Postman"><img src="./icons/postman.svg" alt="postman"></div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="accordion-item">
+                    <input type="radio" id="skill-accordion-5" name="accordion-radio">
+                    <label for="skill-accordion-5" class="accordion-header">
+                        Jeu vidéo
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </label>
+                    <div class="accordion-content">
+                        <div class="badge" title="C#"><span>C#</span></div>
+                        <div class="badge" title="Unity"><i class="fa-brands fa-unity"></i></div>
+                    </div>
                 </div>
             </div>
-            <div id="hero-image"></div>
         </section>
-        <section id="skills" style="scroll-margin-top: 192px;">
-            <h2>Compétences</h2>
-            <div id="skill-card-container">
-                <div class="main-skill-card">
-                    <div class="skill-card">
-                        <h4>01</h4>
-                        <h3>Front-end</h3>
-                        <p>Je maîtrise le développement front-end web, de la conception d’interfaces modernes à
-                            l’intégration responsive. J’accorde une attention particulière à l’ergonomie, à la
-                            performance
-                            et à l’expérience utilisateur pour créer des sites intuitifs et efficaces.</p>
-                    </div>
-                    <div class="language-container">
-                        <div class="language html">
-                            <i class="fa-brands fa-html5"></i>
+        <section id="experience">
+            <h3>Expérience</h3>
+            <div class="experience-container">
+                <div class="experience">
+                    <div class="timeline-token"></div>
+                    <div class="timeline-stroke"></div>
+                    <div class="experience-content">
+                        <h5>2021 - 2024</h5>
+                        <div class="experience-header">
+                            <h4>Lead Designer / Product Owner ⋅ OverSOC</h4>
                         </div>
-                        <div class="language css">
-                            <i class="fa-brands fa-css3-alt"></i>
+                        <p>Refonte de la charte graphique de l’entreprise et création d’un design system, refonte de
+                        l’expérience utilisateur et de l’interface de l’application, responsable du process design,
+                        gamification du logiciel, création de sprints, rédaction de tickets...</p>
+                        <div class="chip-container">
+                            <div class="chip">UI</div>
+                            <div class="chip">UX</div>
+                            <div class="chip">Agile (Scrum)</div>
                         </div>
-                        <div class="language javascript">
-                            <i class="fa-brands fa-js"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="main-skill-card">
-                    <div class="skill-card">
-                        <h4>02</h4>
-                        <h3>Back-end</h3>
-                        <p>Je maîtrise le développement back-end, de la conception d'API à la gestion des bases de
-                            données.
-                            J'assure la performance, la sécurité et la scalabilité des systèmes.</p>
-                    </div>
-                    <div class="language-container">
-                        <div class="language php">
-                            <i class="fa-brands fa-php"></i>
-                        </div>
-                        <div class="language csharp">
-                            C#
-                        </div>
-                        <div class="language javascript">
-                            <i class="fa-brands fa-js"></i>
+                        <h4>Développeur Unity</h4>
+                        <p>Développement de nouvelles fonctionnalités front-end et de prototypes, tests unitaires et
+                        fonctionnels, développement d’interfaces et d’outils internes avec UI Toolkit...</p>
+                        <div class="chip-container">
+                            <div class="chip">C#</div>
+                            <div class="chip">Unity</div>
                         </div>
                     </div>
                 </div>
-
-                <div class="skill-card">
-                    <h4>03</h4>
-                    <h3>UX/UI Design</h3>
-                    <p>Je conçois des interfaces centrées sur l'utilisateur en alliant design esthétique et expérience
-                        intuitive. Je mets l'accent sur l'ergonomie, l'accessiblité et la cohérence visuelle pour créer
-                        des parcours
-                        utilisateurs fluides et engageants.</p>
-                </div>
-                <div class="skill-card">
-                    <h4>04</h4>
-                    <h3>Agilité</h3>
-                    <p>Je maîtrise les méthodologies Agile et Scrum pour organiser, prioriser et livrer des projets de
-                        ma nière itérative. Je favorise la collaboration, l'adaptabilité et l'amélioration continue pour
-                        atteindre les
-                        objectifs avec efficacité.</p>
+                <div class="experience">
+                    <div class="timeline-token"></div>
+                    <div class="timeline-stroke"></div>
+                    <div class="experience-content">
+                        <h5>2019</h5>
+                        <div class="experience-header">
+                            <h4>Développeur Unity (stage) ⋅ Frozenbots</h4>
+                        </div>
+                        <p>Développement d'un générateur de niveaux procédural</p>
+                        <div class="chip-container">
+                            <div class="chip">C#</div>
+                            <div class="chip">Unity</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="projects" style="scroll-margin-top: 192px;">
-            <h2>Projets</h2>
-            <div id="project-card-container">
-                <div class="project-card" id="oversoc">
-                    <img src="./img/oversoc.png" alt="oversoc">
+        <section id="education">
+            <h3>Formation</h3>
+            <div class="experience-container">
+                <div class="experience">
+                    <div class="timeline-token"></div>
+                    <div class="timeline-stroke"></div>
+                    <div class="experience-content">
+                        <h5>2025 - Présent</h5>
+                        <div class="experience-header">
+                            <h4>Formation "Développeur Web et Web Mobile" ⋅ AFCI Formation</h4>
+                        </div>
+                        <p>Refonte de la charte graphique de l’entreprise et création d’un design system, refonte de
+                            l’expérience utilisateur et de l’interface de l’application, responsable du process design,
+                            gamification du logiciel, création de sprints, rédaction de tickets...</p>
+                        <div class="chip-container">
+                            <div class="chip">HTML</div>
+                            <div class="chip">CSS</div>
+                            <div class="chip">JavaScript</div>
+                            <div class="chip">TypeScript</div>
+                            <div class="chip">Sass</div>
+                            <div class="chip">Bootstrap</div>
+                            <div class="chip">Tailwind</div>
+                            <div class="chip">PHP</div>
+                            <div class="chip">Symfony</div>
+                            <div class="chip">Docker</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="project-card" id="maxim-the-robot"></div>
-                <div class="project-card" id="not-a-spyware"></div>
-                <div class="project-card" id="gbc-horror"></div>
-                <div class="project-card" id="cube-kingdoms"></div>
-                <div class="project-card" id="horror-factory"></div>
-                <div class="project-card" id="candlelight"></div>
-                <div class="project-card" id="meadgard"></div>
+                <div class="experience">
+                    <div class="timeline-token"></div>
+                    <div class="timeline-stroke"></div>
+                    <div class="experience-content">
+                        <h5>2016 - 2021</h5>
+                        <div class="experience-header">
+                            <h4>Master "Chef de projet jeu vidéo et dispositifs intéractifs" ⋅ 3axes Institut</h4>
+                        </div>
+                        <p>Conception et UX design, gestion de projet, management, direction artistique, veille et
+                            connaissance des marchés, programmation avancée (intelligence artificielle, base de
+                            données, optimisation)...</p>
+                        <div class="chip-container">
+                            <div class="chip">C#</div>
+                            <div class="chip">Unity</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience">
+                    <div class="timeline-token"></div>
+                    <div class="timeline-stroke"></div>
+                    <div class="experience-content">
+                        <h5>2016 - 2019</h5>
+                        <div class="experience-header">
+                            <h4>Licence "Concepteur Développeur jeu vidéo et dispositifs intéractifs" ⋅ 3axes Institut</h4>
+                        </div>
+                        <p>Développement d'un générateur de niveaux procédural</p>
+                        <div class="chip-container">
+                            <div class="chip">C#</div>
+                            <div class="chip">Unity</div>
+                            <div class="chip">HTML</div>
+                            <div class="chip">CSS</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section id="about" style="scroll-margin-top: 128px;">
-            <h2>À propos</h2>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-        </section>
-    </div>
-
+    </section>
 </body>
 
 </html>

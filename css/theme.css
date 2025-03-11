@@ -1,0 +1,33 @@
+@media screen and (prefers-color-scheme:light) {
+    :root {
+        --background: #F2F2F2;
+        --background-variant: #E6E6E6;
+        --surface: #FFFFFF;
+        --primary: #030303;
+        --primary-variant: #6200EE;
+        --text-on-background: #030303;
+        --text-on-primary: var(--surface);
+        --shadow: 0 2px 4px #0000001A
+    }
+
+    #logo-dark {
+        display: none;
+    }
+}
+
+@media screen and (prefers-color-scheme:dark) {
+    :root {
+        --background: #222129;
+        --background-variant: #26242F;
+        --surface: #34323D;
+        --primary: #FFFFFF;
+        --primary-variant: rgba(94 234 212);
+        --text-on-background: #FFFFFF;
+        --text-on-primary: var(--background);
+        --shadow: 0 2px 4px #0000001A
+    }
+
+    #logo-light {
+        display: none;
+    }
+}
