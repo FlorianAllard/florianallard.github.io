@@ -6,6 +6,7 @@
         --primary: #030303;
         --primary-variant: #6200EE;
         --text-on-background: #030303;
+        --text-on-background-variant: #7b7b7b;
         --text-on-primary: var(--surface);
         --shadow: 0 2px 4px #0000001A
     }
@@ -23,6 +24,7 @@
         --primary: #FFFFFF;
         --primary-variant: rgba(94 234 212);
         --text-on-background: #FFFFFF;
+        --text-on-background-variant: #7b7b7b;
         --text-on-primary: var(--background);
         --shadow: 0 2px 4px #0000001A
     }

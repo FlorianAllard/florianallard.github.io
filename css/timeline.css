@@ -1,0 +1,122 @@
+@import url(./theme.css);
+
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-bottom: 16px;
+}
+
+.experience,
+.education {
+    display: flex;
+    gap: 16px;
+    position: relative;
+}
+
+.timeline-token {
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border: 2px solid var(--text-on-background-variant);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.timeline-stroke {
+    position: absolute;
+    width: 2px;
+    height: calc(100% + 16px);
+    background-color: var(--text-on-background-variant);
+    align-self: stretch;
+    margin: 16px 0 0 7px;
+}
+
+.experience:last-child .timeline-stroke,
+.education:last-child .timeline-stroke {
+    background-color: transparent;
+    background: linear-gradient(to bottom, var(--text-on-background-variant), transparent);
+    height: calc(100% - 16px);
+}
+
+.experience-content {
+    flex-grow: 1;
+}
+
+.experience h5 {
+    margin-top: 1px;
+    height: 15px;
+}
+
+.experience-header {
+    margin-top: 8px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-weight: 700;
+}
+
+.chip-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 8px 0 0 0;
+}
+
+.chip {
+    padding: 6px 12px 4px 12px;
+    background-color: color-mix(in srgb, var(--primary-variant) 20%, transparent);
+    color: var(--primary-variant);
+    border-radius: 25rem;
+    height: fit-content;
+}
+
+.experience-content>h4 {
+    margin-top: 24px;
+}
+
+.education-content {
+    width: 100%;
+    display: grid;
+    grid-template: 1em 141px / 1fr 1fr;
+    gap: 12px 24px;
+
+    h5 {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+    }
+
+    /* .chip-container {
+        margin: 0;
+    } */
+}
+
+#timeline ul {
+display: flex;
+flex-direction: column;
+gap: 8px;
+margin: 8px 0 16px 0;
+padding-left: 16px;
+}
+
+.diploma {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    background-color: var(--surface);
+    padding: 8px;
+    box-shadow: var(--shadow);
+}
+
+.diploma-content {
+    border: 1px solid var(--background-variant);
+    padding: 24px 16px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h4,
+    h5 {
+        text-align: center;
+    }
+}

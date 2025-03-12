@@ -10,61 +10,61 @@
 </head>
 
 <body>
-    <section id="left-section">
-        <header>
-            <div id="hero">
-                <div id="logo-container">
-                    <img src="./icons/logo-light.png" alt="logo" id="logo-light">
-                    <img src="./icons/logo-dark.png" alt="logo" id="logo-dark">
-                </div>
-                <div>
-                    <h1>Florian Allard</h1>
-                    <h2>Développeur fullstack</h2>
-                </div>
+    <header>
+        <div id="hero">
+            <div id="logo-container">
+                <img src="./icons/logo-light.png" alt="logo" id="logo-light">
+                <img src="./icons/logo-dark.png" alt="logo" id="logo-dark">
             </div>
-            <p>Développeur et designer depuis près de 7 ans sur des projets divers tels que des jeux vidéo, des sites web ou des applications, je suis à la recherche d'une nouvelle mission qui me permettra d'approfondir mes compétences et de relever de nouveaux défis.</p>
-            <ul id="navigation">
-                <li><a href="about">À propos</a></li>
-                <li><a href="skills">Compétences</a></li>
-                <li><a href="experience">Expérience</a></li>
-                <li><a href="education">Formation</a></li>
-                <li><a href="projects">Projets</a></li>
-            </ul>
-        </header>
-        <footer>
-            <a href="contact">Me contacter</a>
-            <a href="linkedin"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="github"><i class="fa-brands fa-square-github"></i></a>
-        </footer>
-    </section>
-    <section id="right-section">
+            <div>
+                <h1>Florian Allard</h1>
+                <h2>Développeur fullstack</h2>
+            </div>
+        </div>
+        <p>Je développe et conçoit des projets tels que des jeux vidéo, des sites web ou des applications depuis près de
+            7 ans.<br>Je suis à la recherche d'une nouvelle mission qui me permettra d'approfondir mes compétences et de
+            relever de nouveaux défis.</p>
+        <ul id="navigation">
+            <li>
+                <a href="#about"><hr>À propos</a>
+            </li>
+            <li>
+                <a href="#skills"><hr>Compétences</a>
+            </li>
+            <li>
+                <a href="#timeline"><hr>Parcours</a>
+            </li>
+            <li>
+                <a href="#projects"><hr>Projets</a>
+            </li>
+        </ul>
+    </header>
+    <section id="scrollable">
         <section id="about">
             <h3>À propos</h3>
-            <p id="about"> Je suis un développeur fullstack passionné par la création d'expériences numériques
-                intuitives et performantes. Fort d'une affinité pour l'UI/UX design, je m'efforce de concilier esthétique
-                et fonctionnalité pouroffrir des interfaces web qui non seulement séduisent, mais optimisent
-                l'expérience utilisateur. Mon travail se situe à l'intersection de la conception et du développement, où
-                chaque projet est l'opportunité de bâtir des solutions robustes, accessibles et scalables. Si vous
-                cherchez un développeur capable de transformer vos idées enproduits web concrets et soignés, vous êtes
-                au bon endroit.</p>
+            <p>Je suis un développeur fullstack passionné par la programmation et la construction d'applications numériques. Fort d'une affinité et d'une maîtrise de l'UI/UX Design, je m'efforce à concilier esthétique, usabilité, accessibilité et performance pour proposer des interfaces web ou logicielles élégantes, modernes et respectant les bonnes pratiques.</p>
+            <p>J'ai pu travailler à la fois en tant que développeur et en tant que designer, ce qui m'aide à avoir une vision d'ensemble sur l'ensemble du processus de développement: de la conception au développement, jusqu'au déploiement et à la maintenance. </p>
+            <p>Durant mon temps libre, je joue et développe des jeux vidéo, j'écoute de la musique, je regarde des films ou des séries, ou je lis un bon bouquin de science-fiction.</p>
         </section>
         <section id="skills">
             <h3>Compétences</h3>
             <div class="accordion">
                 <div class="accordion-item">
-                    <input type="radio" id="skill-accordion-1" name="accordion-radio">
+                    <input type="radio" id="skill-accordion-1" name="accordion-radio" checked="checked">
                     <label for="skill-accordion-1" class="accordion-header">
                         Front-end
                         <i class="fa-solid fa-arrow-right"></i>
                     </label>
                     <div class="accordion-content">
-                            <div class="badge" title="HTML"><i class="fa-brands fa-html5"></i></div>
-                            <div class="badge" title="CSS"><i class="fa-brands fa-css3-alt"></i></div>
-                            <div class="badge" title="JavaScript"><i class="fa-brands fa-js"></i></div>
-                            <div class="badge" title="TypeScript"><img src="./icons/typescript.svg" alt="typescript"></div>
-                            <div class="badge" title="Sass"><i class="fa-brands fa-sass"></i></div>
-                            <div class="badge" title="Bootstrap"><i class="fa-brands fa-bootstrap"></i></div>
-                            <div class="badge" title="Tailwind"><img src="./icons/tailwind.svg" alt="tailwind"></div>
+                        <div class="badge" title="HTML"><i class="fa-brands fa-html5"></i></div>
+                        <div class="badge" title="CSS"><i class="fa-brands fa-css3-alt"></i></div>
+                        <div class="badge" title="JavaScript"><i class="fa-brands fa-js"></i></div>
+                        <div class="badge" title="TypeScript"><img src="./icons/typescript.svg" alt="typescript"></div>
+                        <div class="badge" title="Sass"><i class="fa-brands fa-sass"></i></div>
+                        <div class="badge" title="Bootstrap"><i class="fa-brands fa-bootstrap"></i></div>
+                        <div class="badge" title="Tailwind"><img src="./icons/tailwind.svg" alt="tailwind"></div>
+                        <div class="badge" title="Angular"><i class="fa-brands fa-angular"></i></div>
+                        <!-- <div class="badge" title="React"><i class="fa-brands fa-react"></i></div> -->
                     </div>
                     <hr>
                 </div>
@@ -76,7 +76,8 @@
                     </label>
                     <div class="accordion-content">
                         <div class="badge" title="PHP"><i class="fa-brands fa-php"></i></div>
-                        <div class="badge" title="Symfony"><i class="fa-brands fa-symfony"></i></i></div>
+                        <div class="badge" title="Symfony"><i class="fa-brands fa-symfony"></i></div>
+                        <!-- <div class="badge" title="Node.js"><i class="fa-brands fa-node-js"></i></div> -->
                     </div>
                     <hr>
                 </div>
@@ -119,31 +120,62 @@
                 </div>
             </div>
         </section>
-        <section id="experience">
-            <h3>Expérience</h3>
-            <div class="experience-container">
+        <section id="timeline">
+            <h3>Parcours</h3>
+            <div class="timeline-container">
+                <div class="education">
+                    <div class="timeline-token"></div>
+                    <div class="timeline-stroke"></div>
+                    <div class="education-content">
+                        <h5>2025 - Présent</h5>
+                        <div class="diploma">
+                            <div class="diploma-content">
+                                <h4>Développeur Web <br>et Web Mobile</h4>
+                                <h5>Formation ⋅ Formation AFCI</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="experience">
                     <div class="timeline-token"></div>
                     <div class="timeline-stroke"></div>
                     <div class="experience-content">
                         <h5>2021 - 2024</h5>
                         <div class="experience-header">
-                            <h4>Lead Designer / Product Owner ⋅ OverSOC</h4>
+                            <h4>Lead Designer / Product Owner ⋅ <a href="https://www.oversoc.com"
+                                    target="_blank">OverSOC</a></h4>
                         </div>
-                        <p>Refonte de la charte graphique de l’entreprise et création d’un design system, refonte de
-                        l’expérience utilisateur et de l’interface de l’application, responsable du process design,
-                        gamification du logiciel, création de sprints, rédaction de tickets...</p>
+                        <ul>
+                            <li>Responsable du projet de refonte de la charte graphique de l'entreprise et de la création d'un design system.</li>
+                            <li>Responsable du projet de refonte de l'expérience utilisateur du logiciel: conception de nouvelles fonctionnalités et
+                            animation d'ateliers de tests avec les utilisateurs finaux.</li>
+                            <li>Product Owner de l'équipe de développement et responsable du backlog.</li>
+                        </ul>
                         <div class="chip-container">
                             <div class="chip">UI</div>
                             <div class="chip">UX</div>
                             <div class="chip">Agile (Scrum)</div>
                         </div>
                         <h4>Développeur Unity</h4>
-                        <p>Développement de nouvelles fonctionnalités front-end et de prototypes, tests unitaires et
-                        fonctionnels, développement d’interfaces et d’outils internes avec UI Toolkit...</p>
+                        <ul>
+                            <li>Implémentation de nouvelles fonctionnalités en front-end, développement de prototypes et d'outils en interne.</li>
+                        </ul>
                         <div class="chip-container">
                             <div class="chip">C#</div>
                             <div class="chip">Unity</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="education">
+                    <div class="timeline-token"></div>
+                    <div class="timeline-stroke"></div>
+                    <div class="education-content">
+                        <h5>2019 - 2021</h5>
+                        <div class="diploma">
+                            <div class="diploma-content">
+                                <h4>Chef de projet jeux vidéo et dispositifs intéractifs</h4>
+                                <h5>Master ⋅ 3axes Institut</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -155,80 +187,180 @@
                         <div class="experience-header">
                             <h4>Développeur Unity (stage) ⋅ Frozenbots</h4>
                         </div>
-                        <p>Développement d'un générateur de niveaux procédural</p>
+                        <ul>
+                            <li>Développement d'un générateur de niveaux procédural.</li>
+                        </ul>
                         <div class="chip-container">
                             <div class="chip">C#</div>
                             <div class="chip">Unity</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="education">
+                    <div class="timeline-token"></div>
+                    <div class="timeline-stroke"></div>
+                    <div class="education-content">
+                        <h5>2016 - 2019</h5>
+                        <div class="diploma">
+                            <div class="diploma-content">
+                                <h4>Développeur concepteur de jeux vidéo et dispositifs intéractifs</h4>
+                                <h5>Licence ⋅ 3axes Institut</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="education">
-            <h3>Formation</h3>
-            <div class="experience-container">
-                <div class="experience">
-                    <div class="timeline-token"></div>
-                    <div class="timeline-stroke"></div>
-                    <div class="experience-content">
-                        <h5>2025 - Présent</h5>
-                        <div class="experience-header">
-                            <h4>Formation "Développeur Web et Web Mobile" ⋅ AFCI Formation</h4>
-                        </div>
-                        <p>Refonte de la charte graphique de l’entreprise et création d’un design system, refonte de
-                            l’expérience utilisateur et de l’interface de l’application, responsable du process design,
-                            gamification du logiciel, création de sprints, rédaction de tickets...</p>
+        <section id="projects">
+            <h3>Projets</h3>
+            <div class="project-container">
+                <div class="project">
+                    <div class="img-container">
+                        <img src="./images/oversoc.png" alt="oversoc">
+                        <img src="./images/oversoc.png" alt="oversoc">
+                    </div>
+                    <div class="content">
+                        <h4>OverSOC</h4>
+                        <p>Logiciel de cartographie 3D de la cybersécurité. OverSOC permet aux utilisateurs d'agréger
+                            leurs données sensibles et de générer une carte représentant leur réseau, ses vulnérabilités
+                            et ses failles en temps réel.</p>
                         <div class="chip-container">
-                            <div class="chip">HTML</div>
-                            <div class="chip">CSS</div>
-                            <div class="chip">JavaScript</div>
-                            <div class="chip">TypeScript</div>
-                            <div class="chip">Sass</div>
-                            <div class="chip">Bootstrap</div>
-                            <div class="chip">Tailwind</div>
-                            <div class="chip">PHP</div>
-                            <div class="chip">Symfony</div>
-                            <div class="chip">Docker</div>
+                            <div class="chip">C#</div>
+                            <div class="chip">Unity</div>
+                            <div class="chip">UI</div>
+                            <div class="chip">UX</div>
+                            <div class="chip">Agile (Scrum)</div>
                         </div>
                     </div>
                 </div>
-                <div class="experience">
-                    <div class="timeline-token"></div>
-                    <div class="timeline-stroke"></div>
-                    <div class="experience-content">
-                        <h5>2016 - 2021</h5>
-                        <div class="experience-header">
-                            <h4>Master "Chef de projet jeu vidéo et dispositifs intéractifs" ⋅ 3axes Institut</h4>
-                        </div>
-                        <p>Conception et UX design, gestion de projet, management, direction artistique, veille et
-                            connaissance des marchés, programmation avancée (intelligence artificielle, base de
-                            données, optimisation)...</p>
+                <hr>
+                <div class="project">
+                    <div class="img-container">
+                        <img src="./images/notaspyware.png" alt="notaspyware">
+                        <img src="./images/notaspyware.png" alt="notaspyware">
+                    </div>
+                    <div class="content">
+                        <h4>Not A Spyware</h4>
+                        <p>Projet étudiant développé sur Unity. Incarnez un espion freelance et infiltrez-vous dans les
+                            endroits les plus sécurisés du globe pour saboter le plan de domination d'une mystérieuse
+                            organisation.</p>
                         <div class="chip-container">
                             <div class="chip">C#</div>
                             <div class="chip">Unity</div>
                         </div>
                     </div>
                 </div>
-                <div class="experience">
-                    <div class="timeline-token"></div>
-                    <div class="timeline-stroke"></div>
-                    <div class="experience-content">
-                        <h5>2016 - 2019</h5>
-                        <div class="experience-header">
-                            <h4>Licence "Concepteur Développeur jeu vidéo et dispositifs intéractifs" ⋅ 3axes Institut</h4>
+                <hr>
+                <div class="project">
+                    <div class="img-container">
+                        <img src="./images/cryptide.png" alt="cryptide">
+                        <img src="./images/cryptide.png" alt="cryptide">
+                    </div>
+                    <div class="content">
+                        <h4>Cryptide</h4>
+                        <p>Projet personnel développé sur Godot. Explorez l'état de Nowhere et partez à la chasse aux
+                            cryptides dans ce RPG horrifique inspiré par Pokémon et The Goonies.</p>
+                        <div class="chip-container">
+                            <div class="chip">GDScript</div>
+                            <div class="chip">Godot</div>
                         </div>
-                        <p>Développement d'un générateur de niveaux procédural</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="project">
+                    <div class="img-container">
+                        <img src="./images/cubekingdoms.png" alt="cubekingdoms">
+                        <img src="./images/cubekingdoms.png" alt="cubekingdoms">
+                    </div>
+                    <div class="content">
+                        <h4>Cube Kingdoms</h4>
+                        <p>Projet personnel développé sur Unity pour mobile. Partez à l'aventure à travers les Cube
+                            Kingdoms pour vaincre le redoutable Maléficus.</p>
                         <div class="chip-container">
                             <div class="chip">C#</div>
                             <div class="chip">Unity</div>
-                            <div class="chip">HTML</div>
-                            <div class="chip">CSS</div>
+                            <div class="chip">Mobile</div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="project">
+                    <div class="img-container">
+                        <img src="./images/horrorfactory.png" alt="horrorfactory">
+                        <img src="./images/horrorfactory.png" alt="horrorfactory">
+                    </div>
+                    <div class="content">
+                        <h4>Horror Factory</h4>
+                        <p>Projet développé sur Unity lors d'une Game jam. Pris au piège dans une usine délabrée,
+                            reconstruisez les machines pour vous échapper tout en évitant une substance mortelle.</p>
+                        <div class="chip-container">
+                            <div class="chip">C#</div>
+                            <div class="chip">Unity</div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="project">
+                    <div class="img-container">
+                        <img src="./images/candlelightvr.jpg" alt="candlelightvr">
+                        <img src="./images/candlelightvr.jpg" alt="candlelightvr">
+                    </div>
+                    <div class="content">
+                        <h4>Candlelight VR</h4>
+                        <p>Projet VR développé sur Unity lors d'une Game jam. Utilisez la physique du jeu pour résoudre
+                            des énigmes et vous échappez d'un château hanté par les joueurs précédents.</p>
+                        <div class="chip-container">
+                            <div class="chip">C#</div>
+                            <div class="chip">Unity</div>
+                            <div class="chip">VR</div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="project">
+                    <div class="img-container">
+                        <img src="./images/maximtherobot.jpg" alt="maximtherobot">
+                        <img src="./images/maximtherobot.jpg" alt="maximtherobot">
+                    </div>
+                    <div class="content">
+                        <h4>Maxim the Robot</h4>
+                        <p>Jeu de plateforme pour mobile. Incarnez Maxim et ses amis et traversez des niveaux colorés
+                            plus originaux les uns que les autres.</p>
+                        <div class="chip-container">
+                            <div class="chip">C#</div>
+                            <div class="chip">Unity</div>
+                            <div class="chip">Mobile</div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="project">
+                    <div class="img-container">
+                        <img src="./images/meadgard.jpg" alt="meadgard">
+                        <img src="./images/meadgard.jpg" alt="meadgard">
+                    </div>
+                    <div class="content">
+                        <h4>Meadgard</h4>
+                        <p>Projet étudiant développé sur Unity. Assurez la survie de votre taverne face à des flots de
+                            clients affamés et assoiffés dans ce jeu de gestion loufoque et chaotique.</p>
+                        <div class="chip-container">
+                            <div class="chip">C#</div>
+                            <div class="chip">Unity</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </section>
+    <footer>
+        <a href="./cv.pdf" target="_blank" class="cv-container">
+            <img src="./images/cv.png" alt="CV">
+        </a>
+        <div class="button-container">
+            <a href="https://fr.linkedin.com/in/florianallard-dev"  target="_blank" class="secondary-button"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/FlorianAllard" target="_blank" class="secondary-button"><i class="fa-brands fa-square-github"></i></a>
+        </div>
+    </footer>
 </body>
 
 </html>

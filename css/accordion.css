@@ -136,3 +136,15 @@
 .badge[title="Unity"] {
     color: #29333D;
 }
+
+.badge[title="Angular"] {
+    color: #DD0031;
+}
+
+.badge[title="React"] {
+    color: #00D7FC;
+}
+
+.badge[title="Node.js"] {
+    color: #82CD28;
+}

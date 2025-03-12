@@ -1,0 +1,91 @@
+@media screen and (width < 1000px) {
+    body {
+        padding: 32px;
+    }
+
+    header {
+        position: relative;
+        width: 100%;
+        min-width: 100%;
+        height: fit-content;
+        top: 0;
+
+        #navigation {
+            display: none;
+        }
+
+        #logo-container {
+            width: 56px;
+            height: 56px;
+            padding: 12px;
+            
+            img {
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+
+    h1 {
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 1.75em;
+    }
+
+    h2 {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1.25em;
+    }
+
+    h3 {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1em;
+    }
+
+    h4 {
+        font-weight: 700;
+        margin: 4px 0;
+    }
+
+    h5 {
+        color: var(--text-on-background-variant);
+        font-weight: 700;
+    }
+
+    body {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    #scrollable {
+        width: 100%;
+        min-width: 100%;
+        height: fit-content;
+        gap: 48px;
+    }
+
+    .accordion input[type="radio"]:checked+.accordion-header+.accordion-content {
+        height: 128px;
+        padding-bottom: 16px;
+    }
+
+    .diploma {
+        grid-column: 1 / span 2;
+    }
+
+    .project {
+        flex-direction: column;
+
+        .img-container {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    footer {
+        position: inherit;
+        justify-content: space-between;
+    }
+}
