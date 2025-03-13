@@ -1,91 +1,110 @@
 @media screen and (width < 1000px) {
-    body {
-        padding: 32px;
+    body[id] {
+        width: 100%;
+        padding: 0;
+        gap: 2rem;
+        flex-direction: column;
+        align-items: stretch;
     }
 
-    header {
-        position: relative;
+    header[id] {
         width: 100%;
-        min-width: 100%;
-        height: fit-content;
         top: 0;
-
-        #navigation {
-            display: none;
-        }
+        background-color: var(--surface);
+        box-shadow: var(--shadow);
+        z-index: 3;
+        padding: 1rem 2rem;
 
         #logo-container {
-            width: 56px;
-            height: 56px;
-            padding: 12px;
-            
-            img {
-                width: 32px;
-                height: 32px;
+            /* display: none; */
+            height: 2.5rem;
+            width: 2.5rem;
+            border-radius: .5rem;
+        }
+
+        #title-container {
+            display: none;
+            /* height: 2.5rem;
+            justify-content: center;
+
+            h1 {
+                font-size: 150%;
+            }
+
+            h2 {
+                font-size: 75%;
+            } */
+        }
+
+        #navigation,
+        p {
+            display: none;
+        }
+    }
+
+    main[id] {
+        gap: 3rem;
+        padding: 0 2rem 2rem 2rem;
+
+        #skills {
+            .container {
+                input[type="radio"] {
+                    &:checked+label+.content {
+                        height: calc(3rem + 1rem + 3rem + 1rem);
+                    }
+                }
+            }
+        }
+
+        #timeline {
+            .diploma {
+                width: 100%;
+            }
+        }
+
+        #projects {
+            .project {
+                flex-direction: column;
+            }
+
+            .img-container {
+                width: 100%;
+                height: auto;
             }
         }
     }
 
-    h1 {
-        font-weight: 900;
-        text-transform: uppercase;
-        font-size: 1.75em;
-    }
-
-    h2 {
-        font-weight: 700;
-        text-transform: uppercase;
-        font-size: 1.25em;
-    }
-
-    h3 {
-        font-weight: 700;
-        text-transform: uppercase;
-        font-size: 1em;
-    }
-
-    h4 {
-        font-weight: 700;
-        margin: 4px 0;
-    }
-
-    h5 {
-        color: var(--text-on-background-variant);
-        font-weight: 700;
-    }
-
-    body {
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    #scrollable {
+    footer[id] {
         width: 100%;
-        min-width: 100%;
-        height: fit-content;
-        gap: 48px;
-    }
+        height: 4.5rem;
+        top: 0;
+        left: 0;
+        z-index: 4;
+        padding: 1rem 2rem;
+        justify-content: flex-end;
+        align-items: center;
 
-    .accordion input[type="radio"]:checked+.accordion-header+.accordion-content {
-        height: 128px;
-        padding-bottom: 16px;
-    }
+        #cv-container {
+            height: 2.5rem;
+            width: 2.5rem;
+            border-radius: 25rem;
+            background-color: var(--primary);
+            color: var(--text-on-primary);
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 500;
+            border: 0;
+            margin: 0;
+            padding: .5rem 1rem;
+            order: 1;
 
-    .diploma {
-        grid-column: 1 / span 2;
-    }
+            img {
+                display: none;
+            }
 
-    .project {
-        flex-direction: column;
-
-        .img-container {
-            width: 100%;
-            height: auto;
+            span {
+                display: inline;
+            }
         }
-    }
-
-    footer {
-        position: inherit;
-        justify-content: space-between;
     }
 }

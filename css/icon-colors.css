@@ -1,0 +1,77 @@
+*[title="HTML"] {
+    color: #E64D24;
+}
+
+*[title="CSS"] {
+    color: #2261B4;
+}
+
+*[title="JavaScript"] {
+    color: #E4AF5C;
+}
+
+*[title="TypeScript"] {
+    img {
+        filter: invert(31%) sepia(72%) saturate(3595%) hue-rotate(187deg) brightness(93%) contrast(99%);
+    }
+}
+
+*[title="Sass"] {
+    color: #BF608C;
+}
+
+*[title="Bootstrap"] {
+    color: #7752B0;
+}
+
+*[title="Tailwind"] {
+    img {
+        filter: invert(61%) sepia(7%) saturate(3464%) hue-rotate(131deg) brightness(97%) contrast(84%);
+    }
+}
+
+*[title="PHP"] {
+    color: #8A93BE;
+}
+
+*[title="UI"] {
+    color: #8DB392;
+}
+
+*[title="UX"] {
+    color: #567D7E;
+}
+
+*[title="Git"] {
+    color: #F15639;
+}
+
+*[title="Docker"] {
+    color: #1E97D5;
+}
+
+*[title="Postman"] {
+    img {
+        filter: invert(56%) sepia(81%) saturate(2432%) hue-rotate(334deg) brightness(102%) contrast(102%);
+    }
+}
+
+*[title="C#"] {
+    color: #6E0885;
+}
+
+*[title="Unity"] {
+    color: #29333D;
+}
+
+*[title="Angular"] {
+    color: #DD0031;
+}
+
+*[title="React"] {
+    color: #00D7FC;
+}
+
+*[title="Node.js"] {
+    color: #82CD28;
+}
