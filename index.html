@@ -27,7 +27,7 @@
             relever de nouveaux défis.</p>
         <ul id="navigation" class="flex-column">
             <li>
-                <a class="flex-row center-content" href="#about"><hr>À propos</a>
+                <a class="flex-row center-content" href="#about"><hr class="current">À propos</a>
             </li>
             <li>
                 <a class="flex-row center-content" href="#skills"><hr>Compétences</a>
@@ -40,6 +40,7 @@
             </li>
         </ul>
     </header>
+
     <main id="" class="flex-column">
         <section id="about" class="flex-column">
             <h3>À propos</h3>
@@ -47,6 +48,7 @@
             <p>J'ai pu travailler à la fois en tant que développeur et en tant que designer, ce qui m'aide à avoir une vision d'ensemble sur le processus de création d'un site web ou d'une application: de la conception au développement, jusqu'au déploiement et à la maintenance. </p>
             <p>Durant mon temps libre, je joue et développe des jeux vidéo, j'écoute de la musique, je regarde des films ou des séries, ou je lis un bon bouquin de science-fiction.</p>
         </section>
+
         <section id="skills" class="flex-column">
             <h3>Compétences</h3>
             <div class="container flex-column">
@@ -122,6 +124,7 @@
                 </div>
             </div>
         </section>
+
         <section id="timeline"  class="flex-column">
             <h3>Parcours</h3>
             <div class="container flex-column">
@@ -214,10 +217,11 @@
                 </div>
             </div>
         </section>
+
         <section id="projects"  class="flex-column">
             <h3>Projets</h3>
             <div class="container flex-column">
-                <div class="project flex-row">
+                <div id="oversoc" class="project flex-row">
                     <div class="img-container">
                         <img src="./images/oversoc.png" alt="oversoc">
                         <img src="./images/oversoc.png" alt="oversoc">
@@ -236,7 +240,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project flex-row">
+                <div id="notaspyware" class="project flex-row">
                     <div class="img-container">
                         <img src="./images/notaspyware.png" alt="notaspyware">
                         <img src="./images/notaspyware.png" alt="notaspyware">
@@ -252,7 +256,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project flex-row">
+                <div id="cryptide" class="project flex-row">
                     <div class="img-container">
                         <img src="./images/cryptide.png" alt="cryptide">
                         <img src="./images/cryptide.png" alt="cryptide">
@@ -267,7 +271,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project flex-row">
+                <div id="cubekingdoms" class="project flex-row">
                     <div class="img-container">
                         <img src="./images/cubekingdoms.png" alt="cubekingdoms">
                         <img src="./images/cubekingdoms.png" alt="cubekingdoms">
@@ -283,7 +287,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project flex-row">
+                <div id="horrorfactory" class="project flex-row">
                     <div class="img-container">
                         <img src="./images/horrorfactory.png" alt="horrorfactory">
                         <img src="./images/horrorfactory.png" alt="horrorfactory">
@@ -298,7 +302,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project flex-row">
+                <div id="candlelightvr" class="project flex-row">
                     <div class="img-container">
                         <img src="./images/candlelightvr.jpg" alt="candlelightvr">
                         <img src="./images/candlelightvr.jpg" alt="candlelightvr">
@@ -314,7 +318,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project flex-row">
+                <div id="maximtherobot" class="project flex-row">
                     <div class="img-container">
                         <img src="./images/maximtherobot.jpg" alt="maximtherobot">
                         <img src="./images/maximtherobot.jpg" alt="maximtherobot">
@@ -330,7 +334,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project flex-row">
+                <div id="meadgard" class="project flex-row">
                     <div class="img-container">
                         <img src="./images/meadgard.jpg" alt="meadgard">
                         <img src="./images/meadgard.jpg" alt="meadgard">
@@ -348,6 +352,7 @@
             </div>
         </section>
     </main>
+
     <footer id="" class="flex-row">
         <a href="./cv.pdf" target="_blank" id="cv-container" class="flex-row center-content">
             <img src="./images/cv.png" alt="CV">
@@ -358,6 +363,15 @@
         <a href="https://github.com/FlorianAllard" target="_blank" title="GitHub" class="secondary-button flex-row center-content"><i
                 class="fa-brands fa-square-github"></i></a>
     </footer>
+
+    <div id="project-overlay" class="inactive">
+        <div class="window flex-column">
+            <div class="flex-row">
+                <h1>Project title</h1>
+                <button class="secondary-button"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
