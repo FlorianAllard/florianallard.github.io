@@ -102,6 +102,10 @@
                 display: none;
             }
 
+            i {
+                display: block;
+            }
+
             span {
                 display: inline;
             }

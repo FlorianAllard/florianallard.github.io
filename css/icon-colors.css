@@ -75,3 +75,9 @@
 *[title="Node.js"] {
     color: #82CD28;
 }
+
+@media screen and (prefers-color-scheme:dark) {
+    *[title="Unity"] {
+        color: #ffffff;
+    }
+}
