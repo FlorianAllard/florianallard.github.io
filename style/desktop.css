@@ -445,6 +445,7 @@ main[id] {
 .chip-container {
     gap: .5rem;
     margin-top: .25rem;
+    flex-wrap: wrap;
 
     .chip {
         color: var(--primary-variant);
@@ -549,7 +550,7 @@ footer[id] {
         width: calc(100%);
         padding-top: 4rem;
 
-        .window {
+        .overlay {
             pointer-events: all;
         }
     }

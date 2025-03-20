@@ -111,4 +111,49 @@
             }
         }
     }
+
+    #project-overlay {
+        padding: 0;
+        padding-top: 4rem;
+        transition: opacity 300ms ease;
+
+        &.active {
+            padding-top: 4rem;
+        }
+
+        .overlay {
+            border-radius: 0;
+            padding: 3rem 2rem 2rem 2rem;
+        }
+
+        .content {
+            h3 {
+                margin-top: 2rem;
+            }
+
+            h4 {
+                margin-top: 1rem;
+            }
+
+            img {
+                margin: 1rem 0;
+
+                &:last-child {
+                    margin: 1rem 0 0 0;
+                }
+
+                &.main-img {
+                    margin: 0;
+                }
+
+                &.side-margins {
+                    margin: 1rem 0;
+                }
+
+                &:has(+ img) {
+                    margin: 1rem 0 0 0;
+                }
+            }
+        }
+    }
 }
