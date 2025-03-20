@@ -1,0 +1,318 @@
+{
+  "projects": [
+    {
+      "id": "oversoc",
+      "title": "OverSOC",
+      "cover": {
+        "src": "/assets/images/oversoc/thumbnail.png",
+        "alt": "oversoc-thumbnail"
+      },
+      "desc": "Logiciel de cartographie 3D de la cybersécurité. OverSOC permet aux utilisateurs d'agréger leurs données sensibles et de générer une carte représentant leur réseau, ses vulnérabilités et ses failles en temps réel.",
+      "chips": ["C#", "Unity", "UI", "UX", "Agile (Scrum)"],
+      "overlayContent": [
+        {
+          "type": "img",
+          "src": "/assets/images/oversoc/main.webp",
+          "alt": "oversoc-main",
+          "modifier": "main-img"
+        },
+        {
+          "type": "h3",
+          "content": ["Historique"]
+        },
+        {
+          "type": "p",
+          "content": [
+            "OverSOC est une entreprise de conseil et d'édition de logiciels de cybersécurité basée à Lille. Ils aident les entreprises à agréger leurs données cyber et à prioriser leurs prises de décision. Je les ai rejoins en tant que Développeur Unity en juin 2021 afin de renforcer l'équipe de développement du logiciel OverSOC: un logiciel d’agrégation de données cyber s'inscrivant dans le CAASM (Cyber Asset Attack Surface Management).",
+            "<strong>J’ai rapidement démontré mes compétences UI/UX Design, jusqu'à ce qu'on me propose le poste de Lead Designer que j’ai occupé jusqu’à mon départ en juillet 2024.</strong>",
+            "J’ai acquis beaucoup d’expérience durant ces années et accomplis des missions variées, allant de la création d'une charte graphique à une refonte totale de l'expérience utilisateur du logiciel."
+          ]
+        },
+        {
+          "type": "h3",
+          "content": ["Charte graphique et logo"]
+        },
+        {
+          "type": "p",
+          "content": [
+            "Ma première mission en tant que Lead Designer d’OverSOC a été d’établir une <b>nouvelle charte graphique et un nouveau logo pour l’entreprise</b>.",
+            "Ce changement avait pour objectif de donner <b>une image plus sérieuse à nos potentiels clients</b>: en effet, la direction de l’entreprise jusqu’ici était de présenter OverSOC comme une solution alliant cybersécurité et jeux vidéo (le moteur du logiciel était Unity 3D, un moteur destiné au jeu vidéo). Cette appellation laissait penser un manque de sérieux de notre part, d’où le choix de pivoter sur le message et donc l’identité visuelle du produit.",
+            "J’ai tenu à ce que cette nouvelle charte graphique soit <b>plus accessible</b> que la précédente: des contrastes de couleurs suffisants pour les daltoniens, des polices plus faciles à lire pour les dyslexiques etc."
+          ]
+        },
+        {
+          "type": "img",
+          "src": "/assets/images/oversoc/new-logo.png",
+          "alt": "oversoc-new-logo",
+          "modifier": "side-margins"
+        },
+        {
+          "type": "p",
+          "content": [
+            "Les typographies sélectionnées ont été Montserrat et Roboto. Ces polices offrent une lisibilité optimales, qui répondent parfaitement à l’<b>enjeu d’accessibilité</b> de la nouvelle charte graphique.",
+            "Pour la sélection des nouvelles couleurs, nous avons opté pour des couleurs allant du bleu au cyan associé à du blanc. Ces couleurs évoquent <b>la confiance, le professionnalisme et la sécurité</b> tout en conservant une notion de dynamisme ou d’énergie."
+          ]
+        },
+        {
+          "type": "img",
+          "src": "/assets/images/oversoc/gradient.png",
+          "alt": "oversoc-gradient",
+          "modifier": "side-margins"
+        },
+        {
+          "type": "p",
+          "content": [
+            "Pour créer le nouveau logo, nous avons commencé par proposer plusieurs concepts différents à nos collègues, qui ont voté pour celui qu’ils préféraient. Le concept choisi a ensuite été <b>modélisé en 3D</b> afin d’obtenir un rendu rappelant la fonctionnalité phare du logiciel qu’est la cartographie 3D. Nous avons enfin appliqué les couleurs de la nouvelle charte graphique à la forme puis ajouté un cadre aux bords arrondis blanc pour assurer la lisibilité sur n’importe quel fond."
+          ]
+        },
+        {
+          "type": "img",
+          "src": "/assets/images/oversoc/logo-versions.webp",
+          "alt": "oversoc-logo-versions",
+          "modifier": "side-margins"
+        },
+        {
+          "type": "h3",
+          "content": ["Design kit"]
+        },
+        {
+          "type": "p",
+          "content": [
+            "Une fois la nouvelle charte graphique validée, j’ai établi un design kit qui est utilisé par l’ensemble de l’entreprise. Dans ce kit, on peut retrouver un <b>guide d’utilisation des couleurs et des typographies</b>, ainsi que les différents <b>composants nécessaires à la construction d’interfaces</b> (boutons, champs de texte etc).",
+            "Ce kit assure que la <b>nouvelle charte graphique soit utilisée de manière homogène</b> à travers les différentes productions de l’entreprise comme le logiciel, le site vitrine, les publications commerciales, le marketing etc. et que les équipes de développement soient autonomes dans son implémentation.",
+            "<strong>Ce kit a été utilisé par l’ensemble de l’entreprise depuis sa création: il permet aux équipes de gagner du temps et assure une homogénéité à travers les médias qu'elles produisent.</strong>"
+          ]
+        },
+        {
+          "type": "img",
+          "src": "/assets/images/oversoc/design-kit.png",
+          "alt": "oversoc-design-kit"
+        },
+        {
+          "type": "h3",
+          "content": ["Interface web administrative"]
+        },
+        {
+          "type": "h4",
+          "content": ["Un besoin d'autonomie"]
+        },
+        {
+          "type": "p",
+          "content": [
+            "À mesure qu’OverSOC accueillait de nouveaux clients, plusieurs points de blocages ont été relevés, entre autres:",
+            "- <b>Un manque d’administration des différents utilisateurs d’une licence OverSOC</b>. Il y avait un véritable besoin de restreindre l’accès aux données sensibles à certains utilisateurs au sein de la même équipe chez la plupart de nos clients.",
+            "- <b>La distribution inefficace des nouvelles versions d’OverSOC</b>.Jusqu’ici, les utilisateurs devaient demander un lien de téléchargement des nouveaux builds.",
+            "- <b>Une différence de cas d’usage entre les deux personae cibles du logiciel</b>. Les “administrateurs” (ceux qui s’occupent de souscrire à OverSOC et à distribuer les accès dans leur organisation) et les “opérateurs” (ceux qui utilisent OverSOC quotidiennement et qui ont des comptes à rendre aux décideurs)."
+          ]
+        },
+        {
+          "type": "h4",
+          "content": ["Une interface dédiée pour les décideurs"]
+        },
+        {
+          "type": "p",
+          "content": [
+            "Il a donc été décidé de mettre au point une <b>interface web d’administration (baptisée WebAdmin)</b> afin de donner plus d’autonomie aux utilisateurs dans la gestion de leur licence OverSOC et de libérer plus de ressources au sein de notre équipe."
+          ]
+        },
+        {
+          "type": "img",
+          "src": "/assets/images/oversoc/user-flow.png",
+          "alt": "oversoc-user-flow",
+          "modifier": "side-margins"
+        },
+        {
+          "type": "p",
+          "content": [
+            "J’ai commencé la conception de WebAdmin en listant les fonctionnalités nécessaires pour ensuite construire le parcours utilisateur, et enfin aider à la priorisation du développement. <b>Une fois le parcours validé à l’aide de tests utilisateurs, j’ai produit les maquettes, rédigé les User Stories.</b>",
+            "<strong>Depuis la mise en production de WebAdmin , nous avons constaté que les utilisateurs gèrent eux-mêmes leur licence, apprennent à utiliser OverSOC et le mettent à jour en toute autonomie.</strong>"
+          ]
+        },
+        {
+          "type": "img",
+          "src": "/assets/images/oversoc/web-admin.png",
+          "alt": "oversoc-web-admin"
+        },
+        {
+          "type": "h3",
+          "content": ["Refonte UI/UX du logiciel"]
+        },
+        {
+          "type": "h4",
+          "content": ["Une architecture de l'information contraignante"]
+        },
+        {
+          "type": "p",
+          "content": [
+            "En plus des points de blocages cités ci-dessus, de nouvelles contraintes liées aux nouvelles sources de données adoptées par OverSOC ont vu le jour. En effet, jusqu’ici OverSOC se chargeait d’intégrer des données liés aux machines du client (ordinateurs, serveurs, imprimantes...) comme leur connectique, leurs vulnérabilités, ou encore les agents EDR installés. Ces données étaient accessibles via des modes, qui changeaient le type de donné affiché en fonction du mode sélectionné:",
+            "- Le mode Cartographie, qui représente l’infrastructure des machines (ports, IPv4, système d’exploitation...)",
+            "- Le mode Vulnérabilité, qui représente les failles de sécurité de chaque machine",
+            "- Le mode Alerte, qui représente les éventuelles attaques ayant impacté chaque machine",
+            "- Le mode Conformité, qui représente la couverture EDR sur l’ensemble des machines",
+            "Ces modes définissent également l’apparence des assets dans la carte 3D: la hauteur et la couleur.",
+            "<b>Cet éparpillement des informations générait une frustration chez nos utilisateurs . Ceux-ci exprimaient que leurs données devait être facile et rapide d’accès, ce qui n’était pas le cas dans l’étât actuel du logiciel.</b>"
+          ]
+        },
+        {
+          "type": "img",
+          "src": "/assets/images/oversoc/old-version.webp",
+          "alt": "oversoc-old-version"
+        },
+        {
+          "type": "p",
+          "content": [
+            "De plus, avec l’<b>augmentation presque exponentielle des types de données</b> gérés par OverSOC (données applicatives, données de pare-feu, données des utilisateurs...) il est vite devenu évident qu’il fallait trouver un nouveau moyen de rendre <b>accessible, lisible et exploitable toutes ces informations en quelques clics.</b>"
+          ]
+        },
+        {
+          "type": "h4",
+          "content": ["Une modularité extensible"]
+        },
+        {
+          "type": "p",
+          "content": [
+            "Afin de m’aiguiller vers une solution, j’ai commencé par mettre à plat les différentes données qu’OverSOC traitait déjà et celles que l’on comptait traiter ensuite. <b>J’ai ensuite animé plusieurs ateliers de tri de carte en interne et avec nos utilisateurs</b> afin d’assigner ces données à des types d’assets différents (machine, application, vulnérabilité, utilisateur, alerte...)."
+          ]
+        },
+        {
+          "type": "img",
+          "src": "/assets/images/oversoc/card-sorting.png",
+          "alt": "oversoc-card-sorting",
+          "modifier": "side-margins"
+        },
+        {
+          "type": "p",
+          "content": [
+            "<strong>Les ateliers utilisateurs ont confirmé que l’architecture de l’information du logiciel n’était pas optimale et était difficilement maintenable.</strong>",
+            "<strong>Ils nous ont également donné une direction vers laquelle se diriger afin d’obtenir une architecture flexible, efficace et intuitive.</strong>",
+            "La solution adoptée était <b>s’affranchir des modes, de proposer toute les catégories de données à tout moment et de laisser la main à l’utilisateur</b> dans la configuration de la carte 3D:",
+            "- L’utilisateur peux consulter les données à n’importe quel moment, sans dépendance avec la configuration de la carte 3D.",
+            "- Il peut choisir la donnée qui défini le groupement, la couleur et la dimension de ses assets.",
+            "- Il était prévu d'ajouter dans une itération future de lui laisser le choix du type d’asset à afficher dans la carte 3D (machine, application, utilisateur...).",
+            "Nous avons également <b>retravaillé le système de filtrage du logiciel afin de se rapprocher d’un filtrage en langage parlé.</b>",
+            "Grâce à cette nouvelle architecture de l’information et à la refonte du filtrage, nous avons pu <b>ajouter plus d’options de tri et de filtrage aux tableaux afin de faciliter la manipulation de la données.</b>"
+          ]
+        },
+        {
+          "type": "img",
+          "src": "/assets/images/oversoc/new-filters.png",
+          "alt": "oversoc-new-filters"
+        },
+        {
+          "type": "img",
+          "src": "/assets/images/oversoc/new-table.png",
+          "alt": "oversoc-new-table"
+        },
+        {
+          "type": "h3",
+          "content": ["Site vitrine"]
+        },
+        {
+          "type": "p",
+          "content": [
+            "Pendant deux semaines, j’ai assisté l’équipe Marketing pour leur projet de refonte du site vitrine. Cette refonte avait pour but d’<b>adapter notre discours à la nouvelle stratégie commerciale</b>, et ce fut l'occasion parfaite d'<b>adapter le site à la nouvelle charte graphique.</b>",
+            "Ce projet était sous une contrainte de temps: le nouveau site devait être mis en production avant le début d’un grand salon de la cyber régional. Le site a été mis en ligne dans les temps, et la réception du public a été favorable.",
+            "<b>J’ai maquetté l’intégralité du site sur Figma</b> à partir des concepts et du contenu que m’ont transmis l’équipe Marketing. Une fois les maquettes terminées, j’ai continué d’assister l’équipe Marketing en participant au suivi du développement du site."
+          ]
+        },
+        {
+          "type": "a",
+          "href": "https://www.oversoc.com"
+        },
+        {
+          "type": "img",
+          "src": "/assets/images/oversoc/website.png",
+          "alt": "oversoc-website"
+        },
+        {
+          "type": "h3",
+          "content": ["OverSOC web-only"]
+        },
+        {
+          "type": "p",
+          "content": [
+            "Après plusieurs années passées sous forme de client lourd développé sur le moteur 3D Unity, le logiciel OverSOC allait revoir le jour sous la forme d’une version web-only.   En effet, nous avons accumulé beaucoup de dette technique du fait qu’un logiciel Unity est difficilement maintenable et que la performance du logiciel était loin d’être idéale chez la plupart de nos utilisateurs.",
+            "Nous avons donc amorcé la conception d’OverSOC comme interface exclusivement web. En plus de ce changement de format, il a été décidé de se concentrer sur l’agrégation et l’enrichissement de données ce qui conduit à un passage au second plan de la cartographie 3D. Celle-ci étant centrale à la version précédente d’OverSOC, il était nécessaire de reconcevoir l’intégralité du logiciel en s’inspirant de l’existant pour perdre le moins de temps possible.",
+            "<strong>Ma dernière mission au sein d’OverSOC a été d’établir le nouveau parcours utilisateur en animant plusieurs ateliers en interne et avec nos clients.</strong>",
+            "J’ai ensuite créé les maquettes basse fidélité de ce parcours, qui ont été utilisées après mon départ pour le développement de la nouvelle version."
+          ]
+        },
+        {
+          "type": "img",
+          "src": "/assets/images/oversoc/web-only.jpg",
+          "alt": "oversoc-web-only"
+        }
+      ]
+    },
+    {
+      "id": "notaspyware",
+      "title": "Not A Spyware",
+      "cover": {
+        "src": "/assets/images/notaspyware.png",
+        "alt": "notaspyware-cover"
+      },
+      "desc": "Projet étudiant développé sur Unity. Incarnez un espion freelance et infiltrez-vous dans les endroits les plus sécurisés du globe pour saboter le plan de domination d'une mystérieuse organisation.",
+      "chips": ["C#", "Unity"]
+    },
+    {
+      "id": "cryptide",
+      "title": "Cryptide",
+      "cover": {
+        "src": "/assets/images/cryptide.png",
+        "alt": "cryptide-cover"
+      },
+      "desc": "Projet personnel développé sur Godot. Explorez l'État du Nowhere et partez à la chasse aux légendes urbaines dans ce RPG horrifique inspiré par Pokémon et The Goonies.",
+      "chips": ["GDScript", "Godot"]
+    },
+    {
+      "id": "cubekingdoms",
+      "title": "Cube Kingdoms",
+      "cover": {
+        "src": "/assets/images/cubekingdoms.png",
+        "alt": "cubekingdoms-cover"
+      },
+      "desc": "Projet personnel développé sur Unity pour mobile. Partez à l'aventure à travers les Cube Kingdoms pour vaincre le redoutable Randomancien.",
+      "chips": ["C#", "Unity", "Mobile"]
+    },
+    {
+      "id": "horrorfactory",
+      "title": "Horror Factory",
+      "cover": {
+        "src": "/assets/images/horrorfactory.png",
+        "alt": "horrorfactory-cover"
+      },
+      "desc": "Projet développé sur Unity lors d'une Game jam. Pris au piège dans une usine délabrée, reconstruisez les machines pour vous échapper tout en évitant une substance mortelle.",
+      "chips": ["C#", "Unity"]
+    },
+    {
+      "id": "candlelightvr",
+      "title": "Candlelight VR",
+      "cover": {
+        "src": "/assets/images/candlelightvr.jpg",
+        "alt": "candlelightvr-cover"
+      },
+      "desc": "Projet VR développé sur Unity lors d'une Game jam. Utilisez la physique du jeu pour résoudre des énigmes et vous échappez d'un château hanté par les joueurs précédents.",
+      "chips": ["C#", "Unity", "VR"]
+    },
+    {
+      "id": "maximtherobot",
+      "title": "Maxim the Robot",
+      "cover": {
+        "src": "/assets/images/maximtherobot.jpg",
+        "alt": "maximtherobot-cover"
+      },
+      "desc": "Jeu de plateforme pour mobile. Incarnez Maxim et ses amis et traversez des niveaux colorés plus originaux les uns que les autres.",
+      "chips": ["C#", "Unity", "Mobile"]
+    },
+    {
+      "id": "meadgard",
+      "title": "Meadgard",
+      "cover": {
+        "src": "/assets/images/meadgard.jpg",
+        "alt": "meadgard-cover"
+      },
+      "desc": "Projet étudiant développé sur Unity. Assurez la survie de votre taverne face à des flots de clients affamés et assoiffés dans ce jeu de gestion loufoque et chaotique.",
+      "chips": ["C#", "Unity"]
+    }
+  ]
+}

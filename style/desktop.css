@@ -1,6 +1,22 @@
 @font-face {
-    font-family: league-spartan;
-    src: url(/LeagueSpartan.ttf);
+    font-family: "League Spartan";
+    src: url(/assets/fonts/LeagueSpartan-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "League Spartan";
+    src: url(/assets/fonts/LeagueSpartan-SemiBold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "League Spartan";
+    src: url(/assets/fonts/LeagueSpartan-Black.ttf);
+    font-weight: 900;
+    font-style: normal;
 }
 
 :root {
@@ -57,7 +73,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-family: league-spartan;
+    font-family: "League Spartan";
     font-size: 100%;
     color: var(--text-on-background);
 }
@@ -91,6 +107,11 @@ h5 {
 
 p {
     line-height: 1.5;
+}
+
+strong {
+    font-size: 1.25rem;
+    font-weight: 700;
 }
 
 span {
@@ -515,16 +536,18 @@ footer[id] {
     height: 100vh;
     background-color: color-mix(in srgb, var(--primary) 25%, transparent);
     padding: 4rem max(16rem, calc(100vw - 1000px) / 2);
+    padding-top: 8rem;
     overflow: hidden;
     opacity: 0%;
     pointer-events: none;
-    transition: opacity 300ms ease;
+    transition: opacity 300ms ease, padding-top 300ms ease;
 
     &.active {
         overflow-y: scroll;
         opacity: 100%;
         pointer-events: auto;
         width: calc(100%);
+        padding-top: 4rem;
 
         .window {
             pointer-events: all;
@@ -536,18 +559,48 @@ footer[id] {
         border: none;
     }
 
-    .window {
+    .overlay {
         flex-grow: 1;
         background-color: var(--surface);
         box-shadow: var(--shadow);
         border-radius: 1rem;
-        height: 200vh;
         padding: 4rem;
         align-items: stretch;
+        gap: 2rem;
     }
 
     div:nth-child(1) {
         justify-content: space-between;
         width: 100%;
+    }
+
+    .content {
+        h3 {
+            margin-top: 4rem;
+        }
+
+        h4 {
+            margin-top: 1rem;
+        }
+
+        img {
+            margin: 2rem 0;
+
+            &:last-child {
+                margin: 2rem 0 0 0;
+            }
+
+            &.main-img {
+                margin: 2rem 0 0 0;
+            }
+
+            &.side-margins {
+                margin: 1rem 12.5%;
+            }
+
+            &:has(+ img) {
+                margin: 2rem 0 0 0;
+            }
+        }
     }
 }
