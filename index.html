@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Florian Allard</title>
-    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="./style/style.css">
     <script src="./script.js" defer></script>
 </head>
@@ -258,7 +258,10 @@
                             <img src="" alt="img">
                         </div>
                         <div class="content flex-column">
-                            <h4>Title</h4>
+                            <div class="flex-row">
+                                <h4>Title</h4>
+                                <h4>En savoir plus →</h4>
+                            </div>
                             <p>Description</p>
                             <div class="chip-container flex-row">
                                 <template id="chip-template">
@@ -268,134 +271,6 @@
                         </div>
                     </div>
                 </template>
-                <!-- <div id="oversoc" class="project flex-row">
-                    <div class="img-container">
-                        <img src="./assets/images/oversoc.png" alt="oversoc">
-                        <img src="./assets/images/oversoc.png" alt="oversoc">
-                    </div>
-                    <div class="content flex-column">
-                        <h4>OverSOC</h4>
-                        <p>Logiciel de cartographie 3D de la cybersécurité. OverSOC permet aux utilisateurs d'agréger
-                            leurs données sensibles et de générer une carte représentant leur réseau, ses vulnérabilités
-                            et ses failles en temps réel.</p>
-                        <div class="chip-container flex-row">
-                            <div class="chip flex-row center-content">C#</div>
-                            <div class="chip flex-row center-content">Unity</div>
-                            <div class="chip flex-row center-content">UI</div>
-                            <div class="chip flex-row center-content">UX</div>
-                            <div class="chip flex-row center-content">Agile (Scrum)</div>
-                        </div>
-                    </div>
-                </div>
-                <div id="notaspyware" class="project flex-row">
-                    <div class="img-container">
-                        <img src="./assets/images/notaspyware.png" alt="notaspyware">
-                        <img src="./assets/images/notaspyware.png" alt="notaspyware">
-                    </div>
-                    <div class="content flex-column">
-                        <h4>Not A Spyware</h4>
-                        <p>Projet étudiant développé sur Unity. Incarnez un espion freelance et infiltrez-vous dans les
-                            endroits les plus sécurisés du globe pour saboter le plan de domination d'une mystérieuse
-                            organisation.</p>
-                        <div class="chip-container flex-row">
-                            <div class="chip flex-row center-content">C#</div>
-                            <div class="chip flex-row center-content">Unity</div>
-                        </div>
-                    </div>
-                </div>
-                <div id="cryptide" class="project flex-row">
-                    <div class="img-container">
-                        <img src="./assets/images/cryptide.png" alt="cryptide">
-                        <img src="./assets/images/cryptide.png" alt="cryptide">
-                    </div>
-                    <div class="content flex-column">
-                        <h4>Cryptide</h4>
-                        <p>Projet personnel développé sur Godot. Explorez l'état de Nowhere et partez à la chasse aux
-                            cryptides dans ce RPG horrifique inspiré par Pokémon et The Goonies.</p>
-                        <div class="chip-container flex-row">
-                            <div class="chip flex-row center-content">GDScript</div>
-                            <div class="chip flex-row center-content">Godot</div>
-                        </div>
-                    </div>
-                </div>
-                <div id="cubekingdoms" class="project flex-row">
-                    <div class="img-container">
-                        <img src="./assets/images/cubekingdoms.png" alt="cubekingdoms">
-                        <img src="./assets/images/cubekingdoms.png" alt="cubekingdoms">
-                    </div>
-                    <div class="content flex-column">
-                        <h4>Cube Kingdoms</h4>
-                        <p>Projet personnel développé sur Unity pour mobile. Partez à l'aventure à travers les Cube
-                            Kingdoms pour vaincre le redoutable Maléficus.</p>
-                        <div class="chip-container flex-row">
-                            <div class="chip flex-row center-content">C#</div>
-                            <div class="chip flex-row center-content">Unity</div>
-                            <div class="chip flex-row center-content">Mobile</div>
-                        </div>
-                    </div>
-                </div>
-                <div id="horrorfactory" class="project flex-row">
-                    <div class="img-container">
-                        <img src="./assets/images/horrorfactory.png" alt="horrorfactory">
-                        <img src="./assets/images/horrorfactory.png" alt="horrorfactory">
-                    </div>
-                    <div class="content flex-column">
-                        <h4>Horror Factory</h4>
-                        <p>Projet développé sur Unity lors d'une Game jam. Pris au piège dans une usine délabrée,
-                            reconstruisez les machines pour vous échapper tout en évitant une substance mortelle.</p>
-                        <div class="chip-container flex-row">
-                            <div class="chip flex-row center-content">C#</div>
-                            <div class="chip flex-row center-content">Unity</div>
-                        </div>
-                    </div>
-                </div>
-                <div id="candlelightvr" class="project flex-row">
-                    <div class="img-container">
-                        <img src="./assets/images/candlelightvr.jpg" alt="candlelightvr">
-                        <img src="./assets/images/candlelightvr.jpg" alt="candlelightvr">
-                    </div>
-                    <div class="content flex-column">
-                        <h4>Candlelight VR</h4>
-                        <p>Projet VR développé sur Unity lors d'une Game jam. Utilisez la physique du jeu pour résoudre
-                            des énigmes et vous échappez d'un château hanté par les joueurs précédents.</p>
-                        <div class="chip-container flex-row">
-                            <div class="chip flex-row center-content">C#</div>
-                            <div class="chip flex-row center-content">Unity</div>
-                            <div class="chip flex-row center-content">VR</div>
-                        </div>
-                    </div>
-                </div>
-                <div id="maximtherobot" class="project flex-row">
-                    <div class="img-container">
-                        <img src="./assets/images/maximtherobot.jpg" alt="maximtherobot">
-                        <img src="./assets/images/maximtherobot.jpg" alt="maximtherobot">
-                    </div>
-                    <div class="content flex-column">
-                        <h4>Maxim the Robot</h4>
-                        <p>Jeu de plateforme pour mobile. Incarnez Maxim et ses amis et traversez des niveaux colorés
-                            plus originaux les uns que les autres.</p>
-                        <div class="chip-container flex-row">
-                            <div class="chip flex-row center-content">C#</div>
-                            <div class="chip flex-row center-content">Unity</div>
-                            <div class="chip flex-row center-content">Mobile</div>
-                        </div>
-                    </div>
-                </div>
-                <div id="meadgard" class="project flex-row">
-                    <div class="img-container">
-                        <img src="./assets/images/meadgard.jpg" alt="meadgard">
-                        <img src="./assets/images/meadgard.jpg" alt="meadgard">
-                    </div>
-                    <div class="content flex-column">
-                        <h4>Meadgard</h4>
-                        <p>Projet étudiant développé sur Unity. Assurez la survie de votre taverne face à des flots de
-                            clients affamés et assoiffés dans ce jeu de gestion loufoque et chaotique.</p>
-                        <div class="chip-container flex-row">
-                            <div class="chip flex-row center-content">C#</div>
-                            <div class="chip flex-row center-content">Unity</div>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </section>
     </main>
@@ -417,7 +292,7 @@
                 <h1>Project title</h1>
                 <button class="secondary-button"><i class="fa-solid fa-xmark"></i></button>
             </div>
-            <div class="content flex-column">
+            <div class="content flex-column center-content">
                 
             </div>
         </div>

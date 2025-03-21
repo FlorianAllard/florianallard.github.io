@@ -1,20 +1,20 @@
 @font-face {
     font-family: "League Spartan";
-    src: url(/assets/fonts/LeagueSpartan-Regular.ttf);
+    src: url(../assets/fonts/LeagueSpartan-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "League Spartan";
-    src: url(/assets/fonts/LeagueSpartan-SemiBold.ttf);
+    src: url(../assets/fonts/LeagueSpartan-SemiBold.ttf);
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: "League Spartan";
-    src: url(/assets/fonts/LeagueSpartan-Black.ttf);
+    src: url(../assets/fonts/LeagueSpartan-Black.ttf);
     font-weight: 900;
     font-style: normal;
 }
@@ -36,6 +36,8 @@
         --shadow: 0 2px 4px #0000001A;
         --hover-effect: brightness(90%);
         --active-effect: brightness(95%);
+        --hover-effect-alt: brightness(140%);
+        --active-effect-alt: brightness(120%);
     }
 
     #logo-container img[alt="logo-dark"] {
@@ -56,6 +58,8 @@
         --shadow: 0 2px 4px #0000001A;
         --hover-effect: brightness(140%);
         --active-effect: brightness(120%);
+        --hover-effect-alt: brightness(90%);
+        --active-effect-alt: brightness(95%);
     }
 
     #logo-container img[alt="logo-light"] {
@@ -379,6 +383,12 @@ main[id] {
 
             &:hover {
                 filter: var(--hover-effect);
+
+                .content h4:last-of-type {
+                    opacity: 100%;
+                    color: var(--primary-variant);
+                    translate: 0;
+                }
             }
 
             &:active {
@@ -388,6 +398,17 @@ main[id] {
 
         .content {
             gap: .75rem;
+
+            div:has(>h4) {
+                width: 100%;
+                justify-content: space-between;
+
+                h4:last-of-type {
+                    opacity: 50%;
+                    translate: -1rem 0;
+                    transition: opacity 300ms ease, translate 300ms ease;
+                }
+            }
         }
 
         .img-container {
@@ -424,6 +445,15 @@ main[id] {
                 z-index: 1;
             }
         }
+    }
+}
+
+@keyframes arrowTranslate {
+    from {
+        translate: 0;
+    }
+    to {
+        translate: 25% -25%;
     }
 }
 
@@ -560,6 +590,27 @@ footer[id] {
         border: none;
     }
 
+    a {
+        text-decoration: none;
+        width: fit-content;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: var(--surface);
+        background-color: var(--primary-variant);
+        border-radius: 8px;
+        box-shadow: var(--shadow);
+        padding: 1.2rem 2rem 1rem 2rem;
+        filter:none;
+        transition: filter 300ms ease;
+
+        &:hover {
+            filter: var(--hover-effect);
+        }
+        &:active {
+            filter: var(--active-effect);
+        }
+    }
+
     .overlay {
         flex-grow: 1;
         background-color: var(--surface);
@@ -578,13 +629,20 @@ footer[id] {
     .content {
         h3 {
             margin-top: 4rem;
+            width: 100%;
         }
 
         h4 {
             margin-top: 1rem;
+            width: 100%;
+        }
+
+        p{
+            width: 100%;
         }
 
         img {
+            width: 100%;
             margin: 2rem 0;
 
             &:last-child {
@@ -596,7 +654,8 @@ footer[id] {
             }
 
             &.side-margins {
-                margin: 1rem 12.5%;
+                width: 66%;
+                margin: 1rem 0;
             }
 
             &:has(+ img) {

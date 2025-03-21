@@ -216,13 +216,15 @@
           ]
         },
         {
-          "type": "a",
-          "href": "https://www.oversoc.com"
-        },
-        {
           "type": "img",
           "src": "/assets/images/oversoc/website.png",
           "alt": "oversoc-website"
+        },
+        
+        {
+          "type": "a",
+          "label": "Consulter le site",
+          "href": "https://www.oversoc.com"
         },
         {
           "type": "h3",
@@ -248,11 +250,186 @@
       "id": "notaspyware",
       "title": "Not A Spyware",
       "cover": {
-        "src": "/assets/images/notaspyware.png",
-        "alt": "notaspyware-cover"
+        "src": "/assets/images/notaspyware/thumbnail.png",
+        "alt": "notaspyware-thumbnail"
       },
       "desc": "Projet étudiant développé sur Unity. Incarnez un espion freelance et infiltrez-vous dans les endroits les plus sécurisés du globe pour saboter le plan de domination d'une mystérieuse organisation.",
-      "chips": ["C#", "Unity"]
+      "chips": ["C#", "Unity"],
+      "overlayContent": [
+        {
+          "type": "img",
+          "src": "/assets/images/notaspyware/main.png",
+          "alt": "notaspyware-main",
+          "modifier": "main-img"
+        },
+        {
+          "type": "h3",
+          "content": ["Présentation"]
+        },
+        {
+          "type": "p",
+          "content": [
+            "Not A Spyware est un projet étudiant développé sur Unity.",
+            "<strong>Dans le cadre de l'obtention de mon Master, j'ai décidé de développer seul pendant 2 ans un jeu d'infiltration satirique dans une ambiance rétro-futuriste.</strong>",
+            "Le joueur incarne un espion freelance au tout début de sa carrière. Au cours des 7 missions périlleuses, il doit s'infiltrer dans des endroits de plus en plus grands et complexes afin de déjouer le plan de l'antagoniste."
+          ]
+        },
+        {
+          "type": "img",
+          "src": "/assets/images/notaspyware/gameplay.png",
+          "alt": "notaspyware-gameplay"
+        },
+        {
+          "type": "a",
+          "label": "Télécharger la démo",
+          "href": ""
+        },
+        {
+          "type": "h3",
+          "content": ["Conception"]
+        },
+        {
+          "type": "p",
+          "content": [
+            "J'ai commencé à concevoir Not A Spyware en m'inspirant de différentes licences:",
+            "- <b>Deux Ex et Dishonored</b>: le level design de ces jeux, appelés des Immersive Sims, propose aux joueurs plusieurs chemins à prendre pour atteindre un objectif suivant leur style de jeu.",
+            "- <b>Persona</b>: dans cette série de jeu, le joueur doit trouver l'équilibre entre la vie lycéenne et l'exploration de donjons. C'est à partir de cette mécanique que j'ai eu l'idée du cycle planification puis infiltration de Not A Spyware.",
+            "- <b>Alien</b>: pour la direction artistique du jeu, j'ai été fortement influencé par le Cassette Futurism de la licence Alien; on y retrouve de la technologie futuriste à l'aspect rétro des années 80."
+          ]
+        },
+        {
+          "type": "img",
+          "src": "/assets/images/notaspyware/concept-art.png",
+          "alt": "notaspyware-concept-art",
+          "modifier": "side-margins"
+        },
+        {
+          "type": "p",
+          "content": [
+            "Les mécaniques et caractéristiques principales de Not A Spyware sont les suivantes:",
+            "- Une caméra en vue <b>top-down</b> avec la possibilité de la déplacer, de la tourner et de zoomer",
+            "- Le joueur déplace son personnage en cliquant sur une case au sol, et le fait interagir avec son environnement soit en cliquant, soit en dépliant un menu d'actions contextuelles.",
+            "- L'espion dispose de <b>9 gadgets différents</b>, comme la fléchette tranquillisante, la grenade flash, le déguisement…",
+            "- On doit <b>éviter la sécurité composée de gardes, de caméras, de pièges et d'alarmes</b>. Les gardes et les caméra ont un cône de vision représentant ce qu'ils peuvent voir.",
+            "- Les différentes zones inexplorées du niveau sont recouverts d'un brouillard de guerre. Pour le dissiper, le joueur doit explorer la zone. Les zones explorées sont grisées et les ennemis qui y sont deviennent invisibles pour le joueur.",
+            "Avant chaque mission, le joueur doit se planifier son infiltration: c'est à ce stade-là qu'il peut accepter des missions secondaires, améliorer ses gadgets ou acheter de nouvelles ressources ou avoir recours à des complices pour lui faciliter la tâche"
+          ]
+        },
+        {
+          "type": "h3",
+          "content": ["Intelligence artificielle"]
+        },
+        {
+          "type": "p",
+          "content": [
+            "<strong>Le comportement des personnages - joueur ou non - sont dictés par des machines à états que j'ai développé moi-même pour me permettre le plus de flexibilité possible.</strong>",
+            "Une machine à états est un modèle qui permet de déterminer le comportement d'un système en fonction d'un état actuel et d'états reçus ou en fil d'attente.",
+            "Ce modèle offre plusieurs avantages:",
+            "Il permet de décomposer un système complexe en plusieurs morceaux. Cela donne une meilleur lisibilité au système, et le rends plus facile à maintenir.",
+            "Il est réutilisable dans d'autres circonstances: dans Not A Spyware les PNJs, les cinématiques et les dialogues utilisent tous machine à états ayant la même racine.",
+            "Par exemple, le AnimationController d'Unity est une machine à états:"
+          ]
+        },
+        {
+          "type": "img",
+          "src": "/assets/images/notaspyware/animator.png",
+          "alt": "notaspyware-animator",
+          "modifier": "side-margins"
+        },
+        {
+          "type": "p",
+          "content": [
+            "Pour Not A Spyware, j'ai mis en place une machine à états composée de:",
+            "- <b>Un état actuel</b>. Cet état est mis à jour à chaque x images afin d'alléger le coup en performance.",
+            " - <b>Une queue d'états à exécuter l'un après l'autre</b> et la possibilité d'en insérer ou d'en enlever",
+            "- <b>La possibilité d'interrompre l'état actuel</b> et de le remplacer par un nouveau",
+            "Chaque état (State) est composé de:",
+            "- <b>Un constructeur</b> permettant de créer un état à partir d'un jeu de données spécifiques (par exemple: je crée un état 'Se déplacer vers' à partir d'un Vector3 de destination et d'une condition Marcher ou Courir)",
+            "- Une méthode <b>EnterState</b> qui est appelée lorsque cet état devient l'état actuel de la machine.",
+            "- Une méthode <b>UpdateState</b> qui est appelée chaque x images.",
+            "- Une méthode <b>ExitState</b> qui est appelée lorsque cet état se termine.",
+            "- Une méthode <b>SkipState</b> qui est appelée lorsque l'état est interrompu.",
+            "Pour déterminer le comportement d'un état, il me suffit donc de créer un nouveau script qui hérite de la classe State et de mettre en place le nouveau comportement en surchargeant les méthodes citées ci-dessus.",
+            "Grâce à ce modèle, j'ai donc pu mettre en place les comportements des PNJs tel que la patrouille des gardes, la poursuite du joueur si il se fait repérer, la recherche du joueur si le garde l'a perdu de vue etc."
+          ]
+        },
+        {
+          "type": "img",
+          "src": "/assets/images/notaspyware/state-machine.png",
+          "alt": "notaspyware-state-machine",
+          "modifier": "side-margins"
+        },
+        {
+          "type": "h3",
+          "content": ["Pathfinding"]
+        },
+        {
+          "type": "p",
+          "content": [
+            "Pour les déplacements du joueur et des PNJs, j'ai utilisé un système combinant la génération d'une maille de navigation et un algorithme de pathfinding. Je souhaitais que la navigation du jeu se fasse case par case, j'ai donc écrit un algorithme A* afin d'avoir un contrôle total du pathfinding du jeu."
+          ]
+        },
+        {
+          "type": "h4",
+          "content": ["Maille de navigation"]
+        },
+        {
+          "type": "p",
+          "content": [
+            "Afin de pouvoir générer le brouillard de guerre entre chaque pièces, il me fallait séparer leurs mailles de navigation.",
+            "Pour générer la maille de navigation d'une pièce, je commence par calculer ses dimensions. Le script va ensuite tester plusieurs positions pour déterminer si une case est libre et qu'elle n'est pas bloquée par un obstacles. Une fois toutes les postions testées, chaque case va essayer de se lier à ses voisins à l'aide de Raycasts pour que la maille soit conforme à la géométrie des modèles affichés à l'écran."
+          ]
+        },
+        {
+          "type": "img",
+          "src": "/assets/images/notaspyware/nav-mesh.png",
+          "alt": "notaspyware-nav-mesh",
+          "modifier": "side-margins"
+        },
+        {
+          "type": "h4",
+          "content": ["Algorithme A*"]
+        },
+        {
+          "type": "p",
+          "content": [
+            "L'algorithme A* est un algorithme de recherche qui permet de calculer le chemin le plus court entre un point A et un point B. L'algorithme calcule un coût total pour chaque case qui dépend de sa distance avec le point A et le point B. Ensuite, il compare le coût de chaque cases afin de trouver le chemin le moins cher - et donc le plus court - de A à B.",
+            "J'ai appliqué cet algorithme dans le jeu sous la forme d'un NavigationManager, qui reçoit des requêtes de calcul de chemin de la part des machines à états ayant besoin de se déplacer. Ces calculs sont exécutés dans l'ordre de manière asynchrone afin de ne pas bloquer les machines à états en attente d'un itinéraire."
+          ]
+        },
+        {
+          "type": "img",
+          "src": "/assets/images/notaspyware/pathfinding-example.gif",
+          "alt": "notaspyware-pathfinding-example",
+          "modifier": "side-margins"
+        },
+        {
+          "type": "h3",
+          "content": ["Outils d'édition de dialogues"]
+        },
+        {
+          "type": "p",
+          "content": [
+            "Pour les dialogues arborescents du jeu, il me fallait mettre en place un outil dans l'éditeur d'Unity pour pouvoir créer de nouvelles lignes de dialogues, les reliers entre elles etc.",
+            "En utilisant l'API <b>GraphView</b> d'Unity, j'ai crée un outil visuel permettant de:",
+            "- </b>Créer un nouveau noeud<b> de ligne de dialogue, de mise à jour de mission, d'ajout d'objet à l'inventaire du joueur…",
+            "- <b>Renseigner un nom d'animation</b> à lancer quand le noeud est atteint durant le dialogue",
+            "- <b>Déterminer plusieurs points d'entrée</b> selon la situation du joueur (première rencontre, mission accomplie etc)",
+            "- <b>Relier les noeuds</b> entre eux afin de créer le déroulement du dialogue",
+            "L'outil sauvegarde le dialogue sous forme de ScriptableObject, qui peux ensuite être assigné à un PNJ. Quand le joueur décide de lancer un dialogue, une nouvelle scène de dialogue est affichée, et le ScriptableObject est interprété par le DialogueManager pour afficher le dialogue."
+          ]
+        },
+        {
+          "type": "img",
+          "src": "/assets/images/notaspyware/dialogue-tree.png",
+          "alt": "notaspyware-dialogue-tree"
+        },
+        {
+          "type": "img",
+          "src": "/assets/images/notaspyware/dialogue.png",
+          "alt": "notaspyware-dialogue"
+        }
+      ]
     },
     {
       "id": "cryptide",

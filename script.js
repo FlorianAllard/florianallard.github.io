@@ -1,6 +1,6 @@
 "use strict";
 var projectData;
-fetch("/assets/data.json")
+fetch("./assets/data.json")
   .then((res) => res.json())
   .then((data) => {
     projectData = data.projects;
@@ -84,7 +84,7 @@ function openOverlay(currentProjectData) {
 
         case "a":
           newElement = document.createElement("a");
-          newElement.textContent = a.href;
+          newElement.textContent = a.label;
           newElement.setAttribute("href", a.href);
           newElement.setAttribute("target", "_blank");
           overlayContent.appendChild(newElement);
