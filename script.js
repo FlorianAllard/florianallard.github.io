@@ -81,14 +81,33 @@ function openOverlay(currentProjectData) {
         }
         overlayContent.appendChild(newElement);
         break;
+      
+      case "figure":
+        newElement = document.createElement("figure");
+        newElement.innerHTML = 
+        `<figure class='flex-column center-content'>
+          <img src='${a.src}' alt='${a.alt}' class='side-margins' />
+          <figcaption>${a.caption}</figcaption>
+        </figure>`;
+        overlayContent.appendChild(newElement);
+        break;
 
-        case "a":
+      case "a":
           newElement = document.createElement("a");
           newElement.textContent = a.label;
           newElement.setAttribute("href", a.href);
           newElement.setAttribute("target", "_blank");
           overlayContent.appendChild(newElement);
           break;
+
+      case "iframe":
+        newElement = document.createElement("iframe");
+        newElement.setAttribute("src", a.src + "?autoplay=1&mute=1&controls=0");
+        newElement.setAttribute("frameborder", "0");
+        newElement.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+        newElement.setAttribute("allowfullscreen", "");
+        overlayContent.appendChild(newElement);
+        break;
 
       default:
         a.content.forEach((string) => {

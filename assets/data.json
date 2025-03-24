@@ -220,7 +220,7 @@
           "src": "/assets/images/oversoc/website.png",
           "alt": "oversoc-website"
         },
-        
+
         {
           "type": "a",
           "label": "Consulter le site",
@@ -263,6 +263,11 @@
           "modifier": "main-img"
         },
         {
+          "type": "a",
+          "label": "Télécharger la démo",
+          "href": ""
+        },
+        {
           "type": "h3",
           "content": ["Présentation"]
         },
@@ -278,11 +283,6 @@
           "type": "img",
           "src": "/assets/images/notaspyware/gameplay.png",
           "alt": "notaspyware-gameplay"
-        },
-        {
-          "type": "a",
-          "label": "Télécharger la démo",
-          "href": ""
         },
         {
           "type": "h3",
@@ -439,7 +439,21 @@
         "alt": "cryptide-cover"
       },
       "desc": "Projet personnel développé sur Godot. Explorez l'État du Nowhere et partez à la chasse aux légendes urbaines dans ce RPG horrifique inspiré par Pokémon et The Goonies.",
-      "chips": ["GDScript", "Godot"]
+      "chips": ["GDScript", "Godot"],
+      "overlayContent": [
+        {
+          "type": "iframe",
+          "src": "https://www.youtube.com/embed/9dvq-czWz8A"
+        },
+        {
+          "type": "p",
+          "content": [
+            "Je travaille actuellement sur Cryptide, un RPG horrifique inspiré de Pokémon, Disco Elysium et les mythes urbains. J'ai débuté ce projet pour m'initier au moteur Godot et à GDScript.",
+            "Pour le moment, j'ai implémenté les mécaniques de base de ce genre de jeux: entrer dans une maison et changer de scène, lire un panneau, parler à un PNJ etc",
+            "Je travaille actuellement sur l'implémentation des combats, avec la rencontre d'ennemis dans le monde, le lancement du combat dans une scène séparée, les conteneurs de données pour les ennemis et leurs attaques."
+          ]
+        }
+      ]
     },
     {
       "id": "cubekingdoms",
@@ -449,47 +463,178 @@
         "alt": "cubekingdoms-cover"
       },
       "desc": "Projet personnel développé sur Unity pour mobile. Partez à l'aventure à travers les Cube Kingdoms pour vaincre le redoutable Randomancien.",
-      "chips": ["C#", "Unity", "Mobile"]
+      "chips": ["C#", "Unity", "Mobile"],
+      "overlayContent": [
+        {
+          "type": "iframe",
+          "src": "https://www.youtube.com/embed/OXKy4WdRDqA"
+        },
+        {
+          "type": "p",
+          "content": [
+            "Cube Kingdoms est un rogue-light pour mobile développé en C# sur Unity.",
+            "Le joueur gère un groupe d'aventuriers et les guide au long de leur voyage jusqu'au repère du boss final.",
+            "Ce projet était l'occasion pour moi de m'essayer au développement de jeux pour mobile, j'ai découvert le concept des machines à états et j'ai mis en pratique mes connaissances en matière de génération procédurale.",
+            "L'aventure démarre lorsque le joueur sélectionne son premier personnage. Au cours de l'aventure le joueur traversera plusieurs royaumes, eux-mêmes découpés en une série de rencontres: avec des ennemis, des marchands, des aventuriers à la recherche d'un groupe etc.",
+            "Les combat de Cube Kingdoms se font automatiquement. Les personnages du joueur et les ennemis attaquent tour à tour selon une jauge d'action. Le joueur peut tout de même changer l'équipement de ses personnages, les soigner ou améliorer leurs caractéristiques à l'aide d'objets achetés ou trouvés pendant le voyage."
+          ]
+        }
+      ]
     },
     {
       "id": "horrorfactory",
       "title": "Horror Factory",
       "cover": {
-        "src": "/assets/images/horrorfactory.png",
+        "src": "/assets/images/horrorfactory/thumbnail.png",
         "alt": "horrorfactory-cover"
       },
       "desc": "Projet développé sur Unity lors d'une Game jam. Pris au piège dans une usine délabrée, reconstruisez les machines pour vous échapper tout en évitant une substance mortelle.",
-      "chips": ["C#", "Unity"]
+      "chips": ["C#", "Unity"],
+      "overlayContent": [
+        {
+          "type": "img",
+          "src": "/assets/images/horrorfactory/1.png",
+          "alt": "horrorfactory-1"
+        },
+        {
+          "type": "p",
+          "content": [
+            "Horror Factory est un jeu de survival horror développé en C# sur Unity lors d'une <a href=\"https://fr.wikipedia.org/wiki/Game_jam\" target=\"_blank\">Game jam</a> d'une semaine. J'étais principalement chargé du développement, mais j'ai aussi participé à la conception du jeu.",
+            "Le joueur incarne un explorateur urbain qui se retrouve pris au piège dans une usine hantée. Dans cette usine, une mystérieuse substance couvre les machines, les murs et le sol du bâtiment. Celle-ci craint la lumière, mais est capable de dévorer quiconque s'approche trop près."
+          ]
+        },
+        {
+          "type": "img",
+          "src": "/assets/images/horrorfactory/2.png",
+          "alt": "horrorfactory-2"
+        },
+        {
+          "type": "p",
+          "content": [
+            "Le joueur trouve un manuel de contremaître, contenant une carte, des informations concernant le fonctionnement des machines, et une jauge représentant la consommation électrique de l'usine. Si la consommation dépasse un certain seuil, le joueur a un temps limité pour atteindre le disjoncteur et le réarmer. Il peut également soulever, tirer, pousser, tourner ou jeter les objets qu'il trouve grâce à une gestion de la physique inspirée des jeux Amnesia.",
+            "Le joueur à pour objectif de relancer les machines de l'usine afin de construire l'objet lui permettant de s'échapper."
+          ]
+        },
+        {
+          "type": "img",
+          "src": "/assets/images/horrorfactory/3.png",
+          "alt": "horrorfactory-2"
+        }
+      ]
     },
     {
       "id": "candlelightvr",
       "title": "Candlelight VR",
       "cover": {
-        "src": "/assets/images/candlelightvr.jpg",
+        "src": "/assets/images/candlelightvr/thumbnail.jpg",
         "alt": "candlelightvr-cover"
       },
       "desc": "Projet VR développé sur Unity lors d'une Game jam. Utilisez la physique du jeu pour résoudre des énigmes et vous échappez d'un château hanté par les joueurs précédents.",
-      "chips": ["C#", "Unity", "VR"]
+      "chips": ["C#", "Unity", "VR"],
+      "overlayContent": [
+        {
+          "type": "img",
+          "src": "/assets/images/candlelightvr/1.png",
+          "alt": "candlelightvr-1"
+        },
+        {
+          "type": "p",
+          "content": [
+            "Candlelight VR est un jeu de puzzle développé en C# sur Unity lors d'une <a href=\"https://fr.wikipedia.org/wiki/Game_jam\" target=\"_blank\">Game jam</a> centrée autours de la VR d'une semaine. J'étais le seul développeur du projet et j'ai participé à la conception du jeu. Candlelight a été le premier projet VR auquel j'ai participé.",
+            "Le joueur commence la partie dans une cellule, avec comme seule source de lumière une petite bougie. Il trouve également une enveloppe qui, une fois brûlée avec la flamme de la bougie, révèle la clé pour sortir de la cellule.",
+            "Le joueur peut dès lors trouver trois puzzles:",
+            "- un stand de tir à l'arc avec un coffre à combinaison. Le joueur doit enflammer ses flèches avec la bougie, et tirer dans la pénombre pour révéler la combinaison du coffre.",
+            "- une salle d'exposition. Le joueur doit brûler un tableau et récupérer la manivelle caché derrière. Avec la manivelle, il peut déplacer un chandelier sous une échelle, et grâce à celle-ci récupérer le trésor suspendu.",
+            "- un laboratoire d'alchimie envahi par la végétation. Le joueur doit suivre une recette tout en faisant attention de ne pas enflammer les plantes avec sa bougie."
+          ]
+        },
+        {
+          "type": "img",
+          "src": "/assets/images/candlelightvr/2.webp",
+          "alt": "candlelightvr-2"
+        },
+        {
+          "type": "p",
+          "content": [
+            "Le joueur trouve un manuel de contremaître, contenant une carte, des informations concernant le fonctionnement des machines, et une jauge représentant la consommation électrique de l'usine. Si la consommation dépasse un certain seuil, le joueur a un temps limité pour atteindre le disjoncteur et le réarmer. Il peut également soulever, tirer, pousser, tourner ou jeter les objets qu'il trouve grâce à une gestion de la physique inspirée des jeux Amnesia.",
+            "Le joueur à pour objectif de relancer les machines de l'usine afin de construire l'objet lui permettant de s'échapper."
+          ]
+        },
+        {
+          "type": "img",
+          "src": "/assets/images/candlelightvr/3.webp",
+          "alt": "candlelightvr-2"
+        }
+      ]
     },
     {
       "id": "maximtherobot",
       "title": "Maxim the Robot",
       "cover": {
-        "src": "/assets/images/maximtherobot.jpg",
+        "src": "/assets/images/maximtherobot/thumbnail.jpg",
         "alt": "maximtherobot-cover"
       },
       "desc": "Jeu de plateforme pour mobile. Incarnez Maxim et ses amis et traversez des niveaux colorés plus originaux les uns que les autres.",
-      "chips": ["C#", "Unity", "Mobile"]
+      "chips": ["C#", "Unity", "Mobile"],
+      "overlayContent": [
+        {
+          "type": "iframe",
+          "src": "https://www.youtube.com/embed/IRHWkjF5NPQ"
+        },
+        {
+          "type": "p",
+          "content": [
+            "Maxim the Robot est un jeu de plateformes pour Android et iOs, développé en C# sur Unity par Frozenbots.",
+            "Le joueur commence par incarner un robot qui a soif d'aventure, Maxim. Le jeu propose 10 personnages différents, 6 mondes uniques et plus de 90 niveaux. Les personnages ont tous une compétences spéciale, comme le triple saut, le grappin, se rouler en boule pour gagner de la vitesse… Le jeu est fortement inspiré des sidescrollers des années 90, comme la série Mario, Donkey Kong Country ou encore Sonic.",
+            "<strong>J'ai rejoint le projet durant 3 mois de stage, au cours duquel ma tâche était de mettre au point un générateur de niveaux procédural afin de proposer au joueur un nouveau niveau exclusif chaque jour.</strong>",
+            "Pour parvenir à ce résultat, j'ai d'abord défini des 'cases' avec configurations différentes. Ensuite, j'ai développé un algorithme qui génère un chemin plus ou moins long qui déterminera le tracé entre le départ et l'arrivée du niveau. Des cases sont donc placées pour créer ce parcours, et le générateur fini par créer des zones de cul-de-sac avec des récompenses à partir des issues inutilisées dans le parcours."
+          ]
+        },
+        {
+          "type": "figure",
+          "src": "/assets/images/maximtherobot/procedural.png",
+          "alt": "maximtherobot-procedural",
+          "caption": "Exemple de niveau généré avec un algorithme similaire."
+        }
+      ]
     },
     {
       "id": "meadgard",
       "title": "Meadgard",
       "cover": {
-        "src": "/assets/images/meadgard.jpg",
+        "src": "/assets/images/meadgard/thumbnail.jpg",
         "alt": "meadgard-cover"
       },
       "desc": "Projet étudiant développé sur Unity. Assurez la survie de votre taverne face à des flots de clients affamés et assoiffés dans ce jeu de gestion loufoque et chaotique.",
-      "chips": ["C#", "Unity"]
+      "chips": ["C#", "Unity"],
+
+      "overlayContent": [
+        {
+          "type": "iframe",
+          "src": "https://www.youtube.com/embed/fh3AJSb4pZ0"
+        },
+        {
+          "type": "p",
+          "content": [
+            "Meadgard est un jeu de gestion pour PC, développé en C# sur Unity dans le cadre de l'obtention de ma licence.",
+            "Le joueur démarre la partie en sélectionnant un dieu viking parmis 6 disponibles. Chaque dieu à une taverne à l'apparence unique et un bonus/malus qui lui est propre."
+          ]
+        },
+        {
+          "type": "p",
+          "content": [
+            "Chaque jour le joueur doit préparer sa taverne et assurer le service. Il commence par recevoir une missive qui va indiquer ce qu'il se passera en cours de journée. Ensuite, il peut améliorer le mobilier (plus de places, cuisine plus efficace, plus de stock…), recruter du personnel, ou encore envoyer des voleurs en mission (saboter les tavernes adverses, faire du contre-espionnage…). Une fois la journée lancée, des hordes de clients affamés et assoiffés débarquent dans la taverne et attendent qu'on leur servent leur commande. Attention cependant, il se peut que des voleurs adverses se cachent parmis les clients: si ils sont servis, ils sabotent la taverne du joueur en la salissant ou en volant des ressources.",
+            "<strong>Durant l'année de développement de ce projet, je me suis concentré sur les mécaniques principales du projet: le comportement des personnages, les mécaniques de jeu, l'interface etc.</strong>",
+            "Le plus grand défi de ce projet a été le comportement des employés: en effet, ceux-ci ont tous un temps d'attente avant d'accomplir une tâche de leur propre chef. Le joueur peut leur indiquer quoi, mais il est plutôt avantageux de spécialiser ses employés et de les laisser agir automatiquement. La solution qui j'ai adoptée était de créer une liste de tâches à faire, triée par ancienneté. À la fin du cooldown d'un employé, il prend la première tâche qu'il peut effectuer dans la liste. Grâce à une machine à états, il était facile de séquencer les différentes actions qu'un employé peut faire, par exemple: se déplacer jusqu'à un client, attendre le temps de prendre sa commande, se rendre en cuisine et ajouter la commande à la liste de tâches des cuisiniers."
+          ]
+        },
+        {
+          "type": "figure",
+          "src": "/assets/images/meadgard/2.png",
+          "alt": "meadgard-2",
+          "caption": "La machine à états des serveurs et serveuses."
+        }
+      ]
     }
   ]
 }

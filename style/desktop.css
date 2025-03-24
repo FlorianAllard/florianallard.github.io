@@ -590,7 +590,7 @@ footer[id] {
         border: none;
     }
 
-    a {
+    :not(p)>a {
         text-decoration: none;
         width: fit-content;
         text-transform: uppercase;
@@ -645,7 +645,7 @@ footer[id] {
             width: 100%;
             margin: 2rem 0;
 
-            &:last-child {
+            &:last-child, &:has(+figcaption) {
                 margin: 2rem 0 0 0;
             }
 
@@ -661,6 +661,21 @@ footer[id] {
             &:has(+ img) {
                 margin: 2rem 0 0 0;
             }
+        }
+
+        iframe {
+            width: 100%;
+            margin: 0 0 2rem 0;
+            aspect-ratio: 789/444;
+        }
+
+        figure {
+            gap: 0;
+        }
+
+        figcaption {
+            text-align: center;
+            opacity: 50%;
         }
     }
 }
