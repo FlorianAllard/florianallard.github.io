@@ -9,6 +9,16 @@ fetch("./assets/data.json")
     instantiateProjects();
   });
 
+const skills = document.querySelectorAll(`#skills input[type="radio"]`);
+for (let i = 0; i < skills.length; i++) {
+  const skill = skills[i];
+  if (i==0) {
+    skill.checked = true;
+  } else {
+    skill.checked = false;
+  }
+}
+
 // GET BROWSER SCROLLBAR WIDTH
 const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
 document.documentElement.style.setProperty(
