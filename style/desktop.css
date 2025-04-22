@@ -23,7 +23,7 @@
     --scrollbar-width: 0;
 }
 
-@media screen and (prefers-color-scheme:light) {
+/* @media screen and (prefers-color-scheme:light) { */
     :root {
         --background: #F2F2F2;
         --background-variant: #E6E6E6;
@@ -43,9 +43,9 @@
     #logo-container img[alt="logo-dark"] {
         display: none;
     }
-}
+/* } */
 
-@media screen and (prefers-color-scheme:dark) {
+/* @media screen and (prefers-color-scheme:dark) {
     :root {
         --background: #222129;
         --background-variant: #26242F;
@@ -65,7 +65,7 @@
     #logo-container img[alt="logo-light"] {
         display: none;
     }
-}
+} */
 
 *,
 ::before,
