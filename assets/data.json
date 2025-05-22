@@ -1,6 +1,96 @@
 {
   "projects": [
     {
+      "id": "vgdb",
+      "title": "VGDB",
+      "cover": {
+        "src": "/assets/images/vgdb/thumbnail.png",
+        "alt": "vgdb-thumbnail"
+      },
+      "desc": "Projet personnel développé pour le web. Site d'aggrégation de données sur les jeux vidéo, proposant un moteur de recherche robuste pour explorer une base de données nourrie par plusieurs API populaires de l'industrie vidéoludique.",
+      "chips": ["HTML", "SCSS", "JavaScript"],
+      "overlayContent": [
+        {
+          "type": "iframe",
+          "src": "https://www.youtube.com/embed/t4W9mbXHhac"
+        },
+        {
+          "type": "h3",
+          "content": ["Projet"]
+        },
+        {
+          "type": "p",
+          "content": [
+            "VGDB (Video Game DataBase) est un projet personnel que j'ai commencé afin de m'entraîner au développement web front & back. Le site est construit en HTML, SCSS et JavaScript et s'appuie sur les données de plusieurs API:",
+            "- <b>IGDB</b> (données générales des jeux: les platformes, les dates de sorties, leur développeur etc).",
+            "- <b>OpenCritic</b> (les notes et les liens vers les critiques du jeu).",
+            "- <b>IsThereAnyDeal</b> (les prix les plus avantageux pour acheter le jeu).",
+            "Pour des raisons techniques, le site n'est pas encore disponible en ligne."
+          ]
+        },
+        {
+          "type": "h4",
+          "content": ["Page d'accueil"]
+        },
+        {
+          "type": "p",
+          "content": [
+            "La page d'accueil de VGDB propose un aperçu des jeux les plus populaires du moment (basé sur le nombre de ventes/ajout au compte Steam), les jeux les plus anticipés et les jeux sortant le lendemain."
+          ]
+        },
+        {
+          "type": "img",
+          "src": "/assets/images/vgdb/home.png",
+          "alt": "vgdb-home"
+        },
+        {
+          "type": "h4",
+          "content": ["Page de jeu"]
+        },
+        {
+          "type": "p",
+          "content": [
+            "La page d'un jeu regroupe l'intégralité des données disponlibles sur le jeu: ses spécificités, les entreprises impliquées dans son développement, un résumé de son histoire, sa localisation, les notes et les critiques de la presse, les prix les plus avantageux pour l'acheter et ses médias (artworks, screenshots et vidéos).",
+            "Une évolution possible de cette page serait de permettre à l'utilisateur d'éditer les informations du jeu et de les sauvegarder dans la propre base de données de VGDB."
+          ]
+        },
+        {
+          "type": "img",
+          "src": "/assets/images/vgdb/game.png",
+          "alt": "vgdb-game"
+        },
+        {
+          "type": "h4",
+          "content": ["Page de rehcherche"]
+        },
+        {
+          "type": "p",
+          "content": [
+            "Il est possible de rechercher un jeu ou de filtrer les jeux disponible via la page de recherche. On peut filtrer les jeux par plateforme, par genre, par date de sortie ou par série/franchise."
+          ]
+        },
+        {
+          "type": "img",
+          "src": "/assets/images/vgdb/search.png",
+          "alt": "vgdb-search"
+        },
+        {
+          "type": "h3",
+          "content": ["La suite"]
+        },
+        {
+          "type": "p",
+          "content": [
+            "Les prochaines features envisagées pour VGDB sont les suivantes:",
+            "- <b>Ajout d'une base de données propre à VGDB</b>: Cette DB, nourrie dans un premier temps par les API citées plus haut, serait modifiable par les utilisateurs et permettrait une plus grande indépendance vis à vis des API.",
+            "- <b>Gestion des utilisateurs</b>: création de compte, connection, gestion du compte et de sa ludothèque",
+            "- <b>Ajout de critiques et de notations par les utilisateurs</b>: chaque utilisateur pourrait noter et critiquer les jeux de sa ludothèque.",
+            "- <b>Partage de sa ludothèque</b>: on pourrait y voir les jeux détenus par un utilisateur, les jeux qu'il a noté et critiqué, et les jeux qu'il a en wishlist."
+          ]
+        }
+      ]
+    },
+    {
       "id": "oversoc",
       "title": "OverSOC",
       "cover": {
