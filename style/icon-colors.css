@@ -76,6 +76,12 @@
     color: #82CD28;
 }
 
+*[title="SQL"] {
+    img {
+        filter: invert(50%) sepia(22%) saturate(3113%) hue-rotate(352deg) brightness(92%) contrast(90%);
+    }
+}
+
 @media screen and (prefers-color-scheme:dark) {
     *[title="Unity"] {
         color: #ffffff;
