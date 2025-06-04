@@ -68,11 +68,15 @@
     color: #DD0031;
 }
 
-*[title="React"] {
+*[title="ReactJS"] {
     color: #00D7FC;
 }
 
 *[title="Node.js"] {
+    color: #82CD28;
+}
+
+*[title="React.js"] {
     color: #82CD28;
 }
 
