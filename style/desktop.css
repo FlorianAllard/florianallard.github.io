@@ -252,28 +252,32 @@ main[id] {
             input[type="radio"] {
                 display: none;
 
-                &:checked+label+.content {
-                    height: calc(3rem + 1rem);
-                    padding-bottom: 1rem;
-                }
-
                 &:checked+label i {
                     rotate: 90deg;
                 }
             }
 
             label {
+                translate: -1rem 0;
+                border-radius: 8px;
                 font-weight: 500;
+                background-color: var(--background);
                 text-transform: uppercase;
-                width: 100%;
+                width: calc(100% + 3rem);
                 gap: 0;
                 justify-content: space-between;
                 cursor: pointer;
-                padding: 1rem 0 .75rem 0;
+                padding: 1rem 1rem .75rem 1rem;
+                transition: all 300ms ease;
 
                 i {
                     rotate: 0;
                     transition: rotate 300ms ease;
+                }
+
+                &:hover {
+                    filter: var(--hover-effect);
+                    color: var(--primary-variant);
                 }
             }
 
@@ -384,7 +388,7 @@ main[id] {
             &:hover {
                 filter: var(--hover-effect);
 
-                .content h4:last-of-type {
+                .content .read-more {
                     opacity: 100%;
                     color: var(--primary-variant);
                     translate: 0;
@@ -403,7 +407,7 @@ main[id] {
                 width: 100%;
                 justify-content: space-between;
 
-                h4:last-of-type {
+                h4 .read-more {
                     opacity: 50%;
                     translate: -1rem 0;
                     transition: opacity 300ms ease, translate 300ms ease;
@@ -458,17 +462,28 @@ main[id] {
 }
 
 .badge {
-    width: 3rem;
+    min-width: 3rem;
+    width: fit-content;
     height: 3rem;
     background-color: var(--surface);
     border-radius: 8px;
     font-size: 150%;
     box-shadow: var(--shadow);
+    gap: 0.5rem;
+    padding: 4px .75rem 0 .75rem;
 
     img {
-        width: 50%;
+        aspect-ratio: 1/1;
         height: 50%;
         object-fit: contain;
+    }
+
+    i, img {
+        margin-bottom: 4px;
+    }
+
+    span {
+        margin-top: 2px;
     }
 }
 

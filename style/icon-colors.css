@@ -10,7 +10,12 @@
     color: #E4AF5C;
 }
 
+*[title="VueJS"] {
+    color: #3fb984;
+}
+
 *[title="TypeScript"] {
+    color: #0178c7;
     img {
         filter: invert(31%) sepia(72%) saturate(3595%) hue-rotate(187deg) brightness(93%) contrast(99%);
     }
@@ -24,9 +29,25 @@
     color: #7752B0;
 }
 
+*[title="Scrum"] {
+    color: #137b92;
+}
+
+*[title="Agile"] {
+    color: #415870;
+}
+
 *[title="Tailwind"] {
+    color: #1fb8bb;
     img {
         filter: invert(61%) sepia(7%) saturate(3464%) hue-rotate(131deg) brightness(97%) contrast(84%);
+    }
+}
+
+*[title="Nuxt"] {
+    color: #108775;
+    img {
+        filter: brightness(0) saturate(100%) invert(28%) sepia(98%) saturate(2847%) hue-rotate(156deg) brightness(90%) contrast(87%);
     }
 }
 
@@ -51,17 +72,21 @@
 }
 
 *[title="Postman"] {
+    color: #ff6341;
     img {
         filter: invert(56%) sepia(81%) saturate(2432%) hue-rotate(334deg) brightness(102%) contrast(102%);
     }
 }
 
-*[title="C#"] {
-    color: #6E0885;
+*[title="MongoDB"] {
+    color: #1aac57;
+    img {
+        filter: brightness(0) saturate(100%) invert(49%) sepia(71%) saturate(511%) hue-rotate(92deg) brightness(95%) contrast(90%);
+    }
 }
 
-*[title="Unity"] {
-    color: #29333D;
+*[title="C#"] {
+    color: #6E0885;
 }
 
 *[title="Angular"] {
@@ -80,14 +105,27 @@
     color: #82CD28;
 }
 
+*[title="GitHub"] {
+    color: #840884;
+}
+
 *[title="SQL"] {
+    color: #e06d1a;
     img {
         filter: invert(50%) sepia(22%) saturate(3113%) hue-rotate(352deg) brightness(92%) contrast(90%);
     }
 }
 
-@media screen and (prefers-color-scheme:dark) {
-    *[title="Unity"] {
-        color: #ffffff;
+*[title="Godot"] {
+    color: #4c8fc1;
+    img {
+        filter: brightness(0) saturate(100%) invert(53%) sepia(23%) saturate(1034%) hue-rotate(163deg) brightness(93%) contrast(88%);
+    }
+}
+
+*[title="NestJS"] {
+    color: #d9214b;
+    img {
+        filter: brightness(0) saturate(100%) invert(20%) sepia(54%) saturate(4180%) hue-rotate(331deg) brightness(95%) contrast(94%);
     }
 }

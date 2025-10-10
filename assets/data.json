@@ -1,6 +1,36 @@
 {
   "projects": [
     {
+      "id": "csp",
+      "title": "Club Santé Premium",
+      "cover": {
+        "src": "/assets/images/csp/thumbnail.png",
+        "alt": "csp-thumbnail"
+      },
+      "desc": "API développée pour Club Santé Premium, entreprise spécialisée dans l’aide à la gestion et le conseil des cabinets de chirurgiens-dentistes. L'API permet de fournir des données complémentaires pour surcharger l'interface de Pipedrive.",
+      "chips": ["TypeScript", "NestJS", "MongoDB"]
+    },
+    {
+      "id": "businessclub",
+      "title": "Business Club",
+      "cover": {
+        "src": "/assets/images/businessclub/thumbnail.png",
+        "alt": "businessclub-thumbnail"
+      },
+      "desc": "Site web. Ces clubs organisent des événements à travers la France, centrés sur les univers du business, du sport et de la politique. Les membres ont l'occasion d'y rencontrer des personnalités reconnues à l'occasion de déjeuners mensuels.",
+      "chips": ["TypeScript", "HTML", "Tailwind", "Nuxt", "NestJS"]
+    },
+    {
+      "id": "euravsm",
+      "title": "EuraVSM",
+      "cover": {
+        "src": "/assets/images/euravsm/thumbnail.png",
+        "alt": "euravsm-thumbnail"
+      },
+      "desc": "Application web développé pour Euralogistic, entreprise spécialisée dans le conseil en production et en logistique. Cet outil métier permet  de créer des cartes représentant les flux de production et de logistique.",
+      "chips": ["TypeScript", "NestJS", "Angular", "CI/CD"]
+    },
+    {
       "id": "vgdb",
       "title": "VGDB",
       "cover": {
@@ -323,7 +353,7 @@
         {
           "type": "p",
           "content": [
-            "Après plusieurs années passées sous forme de client lourd développé sur le moteur 3D Unity, le logiciel OverSOC allait revoir le jour sous la forme d’une version web-only.   En effet, nous avons accumulé beaucoup de dette technique du fait qu’un logiciel Unity est difficilement maintenable et que la performance du logiciel était loin d’être idéale chez la plupart de nos utilisateurs.",
+            "Après plusieurs années passées sous forme de client lourd développé sur le moteur 3D Unity, le logiciel OverSOC allait revoir le jour sous la forme d’une version web-only. En effet, nous avons accumulé beaucoup de dette technique du fait qu’un logiciel Unity est difficilement maintenable et que la performance du logiciel était loin d’être idéale chez la plupart de nos utilisateurs.",
             "Nous avons donc amorcé la conception d’OverSOC comme interface exclusivement web. En plus de ce changement de format, il a été décidé de se concentrer sur l’agrégation et l’enrichissement de données ce qui conduit à un passage au second plan de la cartographie 3D. Celle-ci étant centrale à la version précédente d’OverSOC, il était nécessaire de reconcevoir l’intégralité du logiciel en s’inspirant de l’existant pour perdre le moins de temps possible.",
             "<strong>Ma dernière mission au sein d’OverSOC a été d’établir le nouveau parcours utilisateur en animant plusieurs ateliers en interne et avec nos clients.</strong>",
             "J’ai ensuite créé les maquettes basse fidélité de ce parcours, qui ont été utilisées après mon départ pour le développement de la nouvelle version."

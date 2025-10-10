@@ -19,6 +19,46 @@ for (let i = 0; i < skills.length; i++) {
   }
 }
 
+//#region SKILLS ANIMATION
+const skillItems = document.querySelectorAll("#skills .item");
+
+skillItems.forEach((item) => {
+  const input = item.querySelector('input[type="radio"]');
+  const content = item.querySelector(".content");
+
+  // When the input changes (checked)
+  input.addEventListener("change", () => {
+    // Close all other contents first
+    skillItems.forEach((otherItem) => {
+      const otherContent = otherItem.querySelector(".content");
+      if (otherItem !== item) {
+        otherContent.style.height = "0px";
+        otherContent.style.paddingBottom = "0";
+      }
+    });
+
+    // If this one is checked, expand it
+    if (input.checked) {
+      content.style.height = `calc(${content.scrollHeight}px + 1rem)`;
+      content.style.paddingBottom = "1rem";
+    } else {
+      content.style.height = "0px";
+      content.style.paddingBottom = "0";
+    }
+  });
+
+  // Initialize the first checked skill open
+  if (input.checked) {
+    content.style.height = `calc(${content.scrollHeight}px + 1rem)`;
+    content.style.paddingBottom = "1rem";
+  } else {
+    content.style.height = "0px";
+    content.style.paddingBottom = "0";
+  }
+});
+//#endregion
+
+
 // GET BROWSER SCROLLBAR WIDTH
 const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
 document.documentElement.style.setProperty(
@@ -142,9 +182,13 @@ function instantiateProjects() {
     projectTemplate.parentNode.appendChild(projectClone);
 
     project.id = data.id;
-    project.addEventListener("click", function () {
-      openOverlay(data);
-    });
+    if(data.overlayContent) {
+      project.addEventListener('click', function () {
+        openOverlay(data);
+      });
+    } else {
+      project.querySelector(".read-more").remove();
+    }
 
     const imgArray = project.querySelectorAll("img");
     imgArray.forEach((img) => {
