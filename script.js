@@ -189,6 +189,12 @@ function instantiateProjects() {
     } else {
       project.querySelector(".read-more").remove();
     }
+    if(data.url) {
+        project.href = data.url;
+        project.setAttribute("target", "_blank");
+      } else {
+        project.querySelector(".go-to").remove();
+      }
 
     const imgArray = project.querySelectorAll("img");
     imgArray.forEach((img) => {

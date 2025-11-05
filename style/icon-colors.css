@@ -109,6 +109,10 @@
     color: #840884;
 }
 
+*[title="CICD"] {
+    color: #ec7b2d;
+}
+
 *[title="SQL"] {
     color: #e06d1a;
     img {

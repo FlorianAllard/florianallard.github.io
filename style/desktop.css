@@ -126,7 +126,7 @@ hr {
     border: none;
 }
 
-a {
+main a:not(.project) {
     color: var(--primary-variant);
 }
 
@@ -376,6 +376,9 @@ main[id] {
         .project {
             gap: 1.5rem;
 
+            color: var(--text-on-background);
+            text-decoration: none;
+
             width: calc(100% + 3rem);
             padding: 1.5rem;
             translate: -1.5rem -1.5rem;
@@ -393,6 +396,11 @@ main[id] {
                     color: var(--primary-variant);
                     translate: 0;
                 }
+                .content .go-to {
+                    opacity: 100%;
+                    color: var(--primary-variant);
+                    translate: 0;
+                }
             }
 
             &:active {
@@ -400,18 +408,23 @@ main[id] {
             }
         }
 
+        .read-more {
+                    opacity: 50%;
+                    translate: -1rem 0;
+                    transition: opacity 300ms ease, translate 300ms ease;
+                }
+                .go-to {
+                    opacity: 50%;
+                    translate: -1rem 0;
+                    transition: opacity 300ms ease, translate 300ms ease;
+                }
+
         .content {
             gap: .75rem;
 
             div:has(>h4) {
                 width: 100%;
                 justify-content: space-between;
-
-                h4 .read-more {
-                    opacity: 50%;
-                    translate: -1rem 0;
-                    transition: opacity 300ms ease, translate 300ms ease;
-                }
             }
         }
 

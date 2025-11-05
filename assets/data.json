@@ -7,8 +7,12 @@
         "src": "/assets/images/csp/thumbnail.png",
         "alt": "csp-thumbnail"
       },
-      "desc": "API développée pour Club Santé Premium, entreprise spécialisée dans l’aide à la gestion et le conseil des cabinets de chirurgiens-dentistes. L'API permet de fournir des données complémentaires pour surcharger l'interface de Pipedrive.",
-      "chips": ["TypeScript", "NestJS", "MongoDB"]
+      "desc": "API et extension Chrome développés pour Club Santé Premium, entreprise spécialisée dans l’aide à la gestion et le conseil des cabinets de chirurgiens-dentistes. J'ai ajouté à l'API des scripts de migration et de synchonisation des données entre Pipedrive et MongoDB.",
+      "chips": [
+        "NestJS", 
+        "MongoDB",
+        "TypeScript"
+      ]
     },
     {
       "id": "businessclub",
@@ -17,8 +21,15 @@
         "src": "/assets/images/businessclub/thumbnail.png",
         "alt": "businessclub-thumbnail"
       },
-      "desc": "Site web. Ces clubs organisent des événements à travers la France, centrés sur les univers du business, du sport et de la politique. Les membres ont l'occasion d'y rencontrer des personnalités reconnues à l'occasion de déjeuners mensuels.",
-      "chips": ["TypeScript", "HTML", "Tailwind", "Nuxt", "NestJS"]
+      "desc": "Site web. Ces clubs organisent des événements à travers la France, centrés sur les univers du business, du sport et de la politique. J'ai participé au développement front-end sur la plupart des pages du site, ainsi qu'aux efforts de recette et de mise en production.",
+      "chips": [
+        "Nuxt",
+        "Tailwind",
+        "NestJS",
+        "TypeScript",
+        "HTML"
+      ],
+      "url": "https://business-club-group.com/"
     },
     {
       "id": "euravsm",
@@ -27,8 +38,13 @@
         "src": "/assets/images/euravsm/thumbnail.png",
         "alt": "euravsm-thumbnail"
       },
-      "desc": "Application web développé pour Euralogistic, entreprise spécialisée dans le conseil en production et en logistique. Cet outil métier permet  de créer des cartes représentant les flux de production et de logistique.",
-      "chips": ["TypeScript", "NestJS", "Angular", "CI/CD"]
+      "desc": "Outil métier développé pour Euralogistic, entreprise spécialisée dans le conseil en production et en logistique. J'ai remplacé le service RealmSDK, sur le point d'être deprécié, par une API NestJS. J'ai également mis en place la CI/CD sous forme de tests unitaires, de vérifications de sécurité et de contrôles de qualité automatisés.",
+      "chips": [
+        "NestJS",
+        "Angular",
+        "CI/CD",
+        "TypeScript"
+      ]
     },
     {
       "id": "vgdb",
@@ -127,7 +143,7 @@
         "src": "/assets/images/oversoc/thumbnail.png",
         "alt": "oversoc-thumbnail"
       },
-      "desc": "Logiciel de cartographie 3D de la cybersécurité. OverSOC permet aux utilisateurs d'agréger leurs données sensibles et de générer une carte représentant leur réseau, ses vulnérabilités et ses failles en temps réel.",
+      "desc": "Application de cartographie 3D de la cybersécurité. OverSOC permet aux utilisateurs d'agréger leurs données sensibles et de générer une carte représentant leur réseau, ses vulnérabilités et ses failles en temps réel. J'ai d'abord participé au développement de l'application, puis j'ai été la responsable du design et de la gestion du projet.",
       "chips": ["C#", "Unity", "UI", "UX", "Agile (Scrum)"],
       "overlayContent": [
         {
